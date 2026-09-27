@@ -1,58 +1,84 @@
-"use client";
+import { NextResponse } from "next/server";
+import { prisma } from "@/lib/prisma";
+import { VerifyUser } from "@/app/api/actions/auth/verifyUser";
+import { createToken } from "@/src/utils/token/createToken";
+import { createClient } from "@supabase/supabase-js";
 
-import { useEffect } from "react";
-import { useRouter, useParams } from "next/navigation";
-import { callBackApi } from "@/ApiServices/callback";
+const supabase = createClient(
+  process.env.NEXT_PUBLIC_SUPABASE_URL!,
+  process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY!,
+);
 
-export default function CallbackPage() {
-  const router = useRouter();
-  const params = useParams();
-  const locale = params?.locale || "en";
+export async function POST(req: Request) {
+  try {
+    const { accessToken } = await req.json();
 
-  const openAppOrDashboard = () => {
-    const fallback = setTimeout(() => {
-      router.push(`/${locale}/profile`);
-    }, 1500);
+    if (!accessToken) {
+      return NextResponse.json(
+        { code: "ACCESS_TOKEN_REQUIRED" },
+        { status: 400 },
+      );
+    }
 
-    window.location.href = "ecowat://verified";
+    const {
+      data: { user },
+      error,
+    } = await supabase.auth.getUser(accessToken);
 
-    const handleVisibilityChange = () => {
-      if (document.hidden) {
-        clearTimeout(fallback);
-      }
-    };
+    if (error || !user?.email) {
+      return NextResponse.json({ code: "INVALID_TOKEN" }, { status: 401 });
+    }
 
-    document.addEventListener("visibilitychange", handleVisibilityChange, {
-      once: true,
+    const verifyNewUser = await VerifyUser(user.email);
+
+    if (!verifyNewUser) {
+      return NextResponse.json({ code: "VERIFY_FAILED" }, { status: 400 });
+    }
+
+    const prismaUser = await prisma.user.findUnique({
+      where: {
+        email: user.email,
+      },
+      include: {
+        energyData: {
+          select: {
+            id: true,
+          },
+        },
+      },
     });
-  };
 
-  useEffect(() => {
-    const verifyUser = async () => {
-      const hash = window.location.hash.substring(1);
-      const urlParams = new URLSearchParams(hash);
-      const accessToken = urlParams.get("access_token");
-      if (!accessToken) {
-        router.push(`/${locale}/login`);
-        return;
-      }
-      const res = await callBackApi(accessToken);
-      if (!res.ok) {
-        router.push(`/${locale}/login`);
-        return;
-      }
-      openAppOrDashboard();
-    };
-    verifyUser();
-  }, [router, locale]);
+    if (!prismaUser) {
+      return NextResponse.json({ code: "USER_NOT_FOUND" }, { status: 404 });
+    }
 
-  return (
-    <div className="min-h-screen bg-slate-50 dark:bg-[#0a0a0a] flex flex-col items-center justify-center px-4">
-      <div className="w-full max-w-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-8 text-center shadow-sm">
-        <p className="text-slate-600 dark:text-slate-400 font-medium">
-          Verifying account...
-        </p>
-      </div>
-    </div>
-  );
+    const token = createToken({
+      id: prismaUser.id,
+      email: prismaUser.email,
+      name: prismaUser.name,
+      hasEnergyId: prismaUser.energyData.length > 0,
+    });
+    const response = NextResponse.json(
+      {
+        code: "SUCCESS",
+      },
+      { status: 200 },
+    );
+    response.cookies.set("UserToken", token, {
+      httpOnly: true,
+      secure: process.env.NODE_ENV === "production",
+      sameSite: "lax",
+      path: "/",
+      maxAge: 60 * 60 * 24 * 7,
+    });
+
+    return response;
+  } catch (error) {
+    return NextResponse.json(
+      {
+        code: error instanceof Error ? error.message : "SOMETHING_WENT_WRONG",
+      },
+      { status: 500 },
+    );
+  }
 }
