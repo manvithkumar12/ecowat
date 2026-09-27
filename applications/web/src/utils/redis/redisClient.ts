@@ -1,17 +1,57 @@
-import { createClient } from "redis";
+type RedisSetOptions = {
+  EX?: number;
+  NX?: boolean;
+};
 
-const redisUrl = process.env.REDIS_URL;
+type RedisResponse<T> = {
+  result: T;
+  error?: string;
+};
 
-if (!redisUrl) {
-  throw new Error("REDIS_URL is not configured in the environment");
+const redisUrl = process.env.UPSTASH_REDIS_REST_URL;
+const redisToken = process.env.UPSTASH_REDIS_REST_TOKEN;
+
+if (!redisUrl || !redisToken) {
+  throw new Error(
+    "UPSTASH_REDIS_REST_URL and UPSTASH_REDIS_REST_TOKEN are not configured",
+  );
 }
 
-export const redis = createClient({
-  url: redisUrl,
-});
+const redisEndpoint = redisUrl;
+const redisAuthToken = redisToken;
 
-redis.on("error", (err) => {
-  console.error("Redis Error:", err);
-});
+async function execute<T>(command: string[]): Promise<T> {
+  const response = await fetch(redisEndpoint, {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${redisAuthToken}`,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(command),
+  });
 
-await redis.connect();
+  const data = (await response.json()) as RedisResponse<T>;
+
+  if (!response.ok || data.error) {
+    throw new Error(
+      data.error || `Upstash Redis request failed: ${response.status}`,
+    );
+  }
+
+  return data.result;
+}
+
+export const redis = {
+  get: (key: string) => execute<string | null>(["GET", key]),
+
+  set: (key: string, value: string, options?: RedisSetOptions) => {
+    const command = ["SET", key, value];
+
+    if (options?.NX) command.push("NX");
+    if (options?.EX) command.push("EX", String(options.EX));
+
+    return execute<string | null>(command);
+  },
+
+  del: (key: string) => execute<number>(["DEL", key]),
+};

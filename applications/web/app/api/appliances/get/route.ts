@@ -21,6 +21,7 @@ export const GET = isloggedin(async (req: NextRequest, user) => {
   } catch (err) {
     console.error("Redis GET failed:", err);
   }
+  console.log("triedfrom,,try block",cached)
   if (cached) {
     const parsedData = JSON.parse(cached)
     if (applianceNames && applianceNames.length > 0) {
