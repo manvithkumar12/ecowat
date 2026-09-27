@@ -56,7 +56,7 @@ export async function POST(req: Request) {
       id: prismaUser.id,
       email: prismaUser.email,
       name: prismaUser.name,
-      hasEnergyId: Boolean(prismaUser.energyData),
+      hasEnergyId: prismaUser.energyData.length > 0,
     });
     const response = NextResponse.json(
       {
