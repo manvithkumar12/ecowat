@@ -1,0 +1,47 @@
+{
+  "Profile": {
+    "loading": "Loading profile...",
+    "header": {
+      "title": "Profile",
+      "description": "Manage your account information and personal details."
+    },
+    "personalInfo": {
+      "title": "Personal Information",
+      "fullName": "Full Name",
+      "email": "Email Address",
+      "isVerified": "Is Verified",
+      "no": "No",
+      "yes": "Yes",
+      "Verified": "Verified",
+      "id": "User-Id"
+    },
+    "actions": {
+      "editProfile": "Edit Profile",
+      "changePassword": "Change Password",
+      "deleteAccount": "Delete Account"
+    },
+    "changePasswordDialog": {
+      "title": "Change Password",
+      "description": "Enter your current password and your new password to update your credentials.",
+      "oldPassword": "Old Password",
+      "oldPasswordPlaceholder": "Enter current password",
+      "newPassword": "New Password",
+      "newPasswordPlaceholder": "Enter new password",
+      "confirmPassword": "Confirm New Password",
+      "confirmPasswordPlaceholder": "Re-enter new password",
+      "cancel": "Cancel",
+      "submit": "Update Password",
+      "success": "Password updated successfully.",
+      "error": "Failed to update password. Please check your current password."
+    },
+    "deleteDialog": {
+      "title": "Delete Account?",
+      "description": "This action cannot be undone. All account information and saved data will be permanently removed.",
+      "instruction": "Please type \"Delete my account\" to confirm:",
+      "confirmationPhrase": "Delete my account",
+      "inputPlaceholder": "Delete my account",
+      "cancel": "Cancel",
+      "confirm": "Delete Account"
+    }
+  }
+}

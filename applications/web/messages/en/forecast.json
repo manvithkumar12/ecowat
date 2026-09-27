@@ -1,0 +1,65 @@
+{
+  "Forecast": {
+    "header": {
+      "title": "Forecast Center",
+      "description": "AI-powered predictions for household energy consumption, electricity costs, and environmental impact over the next 7 days.",
+      "daysRange": "7 Days Range",
+      "exportForecast": "Export Forecast",
+      "refreshForecast": "Refresh Forecast",
+      "exportSuccess": "7-day AI forecast exported successfully as CSV!"
+    },
+    "kpiCards": {
+      "weeklyConsumption": "Weekly Consumption",
+      "weeklyConsumptionTrend": "-4.2% expected",
+      "predictedWeeklyCost": "Predicted Weekly Cost",
+      "predictedWeeklyCostTrend": "€54 dynamic savings",
+      "co2Emissions": "CO₂ Emissions",
+      "co2EmissionsTrend": "84% green offset",
+      "modelConfidence": "Model Confidence",
+      "modelConfidenceTrend": "MAPE verified"
+    },
+    "kpi": {
+      "confidence": "AI model confidence intervals evaluated dynamically"
+    },
+    "days7": {
+      "title": "Next 7-Day Energy Consumption Forecast",
+      "description": "Machine learning prediction of household energy usage.",
+      "actualConsumption": "Actual Consumption",
+      "predictedConsumption": "Predicted Consumption",
+      "actualUsage": "Actual Usage",
+      "HighestPredicted": "Highest Predicted",
+      "LowestPredicted": "Lowest Predicted",
+      "DailyAverage": "Daily Average",
+      "predicted": "Predicted",
+      "confidence": "AI model confidence intervals evaluated dynamically",
+      "estimatedNotice": "Estimated consumption data. We need at least 7 days of usage history before generating personalized forecasts.",
+      "estimatedTooltip": "This is estimated consumption data, not an AI-generated prediction. EcoWatt requires at least 7 days of usage history to generate personalized energy forecasts. Once sufficient data is collected, your forecast will automatically switch to model-generated predictions."
+    },
+    "electricity": {
+      "title": "Predicted Daily Average Electricity Price",
+      "description": "Expected electricity price trends based on machine learning forecasts.",
+      "price": "Price",
+      "HighestPrice": "Highest Price",
+      "LowestPrice": "Lowest Price",
+      "AveragePrice": "Average Price"
+    },
+    "carbon": {
+      "title": "Predicted Carbon Emissions",
+      "description": "Estimated environmental impact based on forecasted energy consumption.",
+      "TotalWeekly": "Total Weekly",
+      "HighestEmission": "Highest Emission",
+      "LowestEmission": "Lowest Emission",
+      "AverageEmission": "Average Emission"
+    },
+    "states": {
+      "emptyTitle": "No forecast data available",
+      "emptyDesc": "Generate predictions using historical energy consumption data.",
+      "generateForecast": "Generate Forecast",
+      "errorTitle": "Unable to generate forecast",
+      "errorDesc": "Forecast service is temporarily unavailable.",
+      "retryForecast": "Retry Forecast",
+      "loadingTitle": "Generating AI Forecasts...",
+      "loadingDesc": "Analyzing energy consumption patterns and preparing predictions."
+    }
+  }
+}

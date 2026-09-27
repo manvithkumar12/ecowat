@@ -1,0 +1,51 @@
+
+export const APPLIANCESMOCKDATA = [
+  {
+    id: "ev",
+    name: "Electric Vehicle",
+    icon: "Zap",
+    load: "7.2 kW",
+    bestTime: "2:00 AM - 5:00 AM",
+    bestType: "94% Wind Power",
+    costSaved: "Save up to $4.50 per charge",
+    timeline: [
+      { time: "12:00 AM", mix: 85, cost: "Low", type: "cheap" },
+      { time: "3:00 AM", mix: 94, cost: "Low", type: "cheap" },
+      { time: "8:00 AM", mix: 15, cost: "High", type: "peak" },
+      { time: "1:00 PM", mix: 55, cost: "Mid", type: "moderate" },
+      { time: "6:00 PM", mix: 5, cost: "High", type: "peak" },
+    ],
+  },
+  {
+    id: "washer",
+    name: "Washing Machine",
+    icon: "Leaf",
+    load: "1.8 kW",
+    bestTime: "1:00 PM - 3:00 PM",
+    bestType: "88% Solar Power",
+    costSaved: "Save up to $0.80 per cycle",
+    timeline: [
+      { time: "12:00 AM", mix: 30, cost: "Mid", type: "moderate" },
+      { time: "3:00 AM", mix: 75, cost: "Low", type: "cheap" },
+      { time: "8:00 AM", mix: 20, cost: "High", type: "peak" },
+      { time: "1:00 PM", mix: 88, cost: "Low", type: "cheap" },
+      { time: "6:00 PM", mix: 10, cost: "High", type: "peak" },
+    ],
+  },
+  {
+    id: "heatpump",
+    name: "Heat Pump",
+    icon: "Cpu",
+    load: "3.5 kW",
+    bestTime: "11:00 AM - 2:00 PM",
+    bestType: "78% Renewable Mix",
+    costSaved: "Reduce HVAC costs by 22%",
+    timeline: [
+      { time: "12:00 AM", mix: 45, cost: "Mid", type: "moderate" },
+      { time: "6:00 AM", mix: 10, cost: "High", type: "peak" },
+      { time: "12:00 PM", mix: 78, cost: "Low", type: "cheap" },
+      { time: "4:00 PM", mix: 40, cost: "Mid", type: "moderate" },
+      { time: "8:00 PM", mix: 15, cost: "High", type: "peak" },
+    ],
+  },
+];

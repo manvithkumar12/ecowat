@@ -1,0 +1,65 @@
+{
+  "Footprint": {
+    "header": {
+      "title": "CO₂-Fußabdruck",
+      "description": "Verfolgen Sie Ihre Umweltauswirkungen, CO₂-Emissionen und Nachhaltigkeitsfortschritte."
+    },
+    "kpis": {
+      "weeklyEmissions": "Wöchentliche Emissionen",
+      "monthlyEmissions": "Monatliche Emissionen",
+      "estCo2Reduction": "Geschätzte CO₂-Reduktion",
+      "sustainabilityScore": "Nachhaltigkeits-Score"
+    },
+    "weekly": {
+      "title": "Wöchentliche CO₂-Emissionen",
+      "subtitle": "Tägliche CO₂-Emissionen der vergangenen 7 Tage.",
+      "highestDay": "Tag mit höchster Emission:",
+      "lowestDay": "Tag mit niedrigster Emission:",
+      "averageDaily": "Durchschnittliche tägliche Emissionen:",
+      "days": {
+        "Sun": "So",
+        "Mon": "Mo",
+        "Tue": "Di",
+        "Wed": "Mi",
+        "Thu": "Do",
+        "Fri": "Fr",
+        "Sat": "Sa"
+      }
+    },
+    "monthly": {
+      "title": "Monatliche CO₂-Emissionen",
+      "subtitle": "CO₂-Emissionen im aktuellen Monat.",
+      "warning": "Weniger als 30 Tage an Daten aufgezeichnet. Prognosen können ungenau sein.",
+      "totalMonthly": "Monatliche Gesamtemissionen",
+      "averageDaily": "Durchschnittliche tägliche Emissionen",
+      "projectedMonthly": "Prognostizierte monatliche Emissionen"
+    },
+    "reduction": {
+      "title": "Prognostizierte CO₂-Reduktion",
+      "subtitle": "Erwartete Emissionsreduktionen in den nächsten 7 Tagen.",
+      "projectedWeekly": "Prognostizierte wöchentliche Reduktion:"
+    },
+    "equivalents": {
+      "title": "Umweltäquivalente",
+      "reducedSummary": "Ihre Emissionen haben sich von {start} bis {end} um −{amount} kg CO₂ verringert. Diese wöchentliche Reduktion entspricht:",
+      "increasedSummary": "Ihre Emissionen haben sich von {start} bis {end} um +{amount} kg CO₂ erhöht. Dieser wöchentliche Anstieg entspricht:",
+      "treesAbsorbed": "Bäumen an absorbiertem CO₂",
+      "treesNeeded": "Bäumen zur Kompensation benötigt",
+      "carAvoided": "an Autofahrten vermieden",
+      "carEmitted": "an zusätzlichen Autofahrten ausgestoßen",
+      "ledPowered": "an betriebener LED-Beleuchtung",
+      "ledEmitted": "an zusätzlicher LED-Beleuchtung",
+      "savingsHousehold": "Erhebliche CO₂-Einsparungen im Haushalt",
+      "increaseHousehold": "Erheblicher CO₂-Anstieg im Haushalt"
+    },
+    "states": {
+      "unableWeeklyTitle": "Wöchentliche Daten konnten nicht geladen werden",
+      "unableWeeklyDesc": "Beim Laden des Emissionsdiagramms ist ein Fehler aufgetreten.",
+      "unableMonthlyTitle": "Monatliche Daten konnten nicht geladen werden",
+      "unableMonthlyDesc": "Beim Abrufen der monatlichen Emissionen ist ein Fehler aufgetreten.",
+      "unableReductionTitle": "Prognose zur CO₂-Reduktion konnte nicht geladen werden",
+      "unableReductionDesc": "Beim Abrufen der Prognose zur CO₂-Reduktion ist ein Fehler aufgetreten.",
+      "retry": "Wiederholen"
+    }
+  }
+}

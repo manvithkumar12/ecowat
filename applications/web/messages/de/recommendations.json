@@ -1,0 +1,67 @@
+{
+  "Recommendations": {
+    "header": {
+      "title": "Intelligente Empfehlungen",
+      "basedOn": "(Basierend auf Ihren <link>gespeicherten Geräten</link>)",
+      "description": "KI-gestützte Zeitplanoptimierungen zur Minimierung der Netzkosten und Maximierung der lokalen erneuerbaren Energienutzung.",
+      "refreshing": "Wird aktualisiert...",
+      "refresh": "Empfehlungen aktualisieren",
+      "viewForecast": "Prognose ansehen"
+    },
+    "summaryCards": {
+      "potentialSavings": "Heutiges Einsparpotenzial",
+      "potentialSavingsDesc": "Gesamtersparnis",
+      "recommendedActions": "Empfohlene Geräteaktionen",
+      "recommendedActionsDesc": "Lastverschiebungen planen",
+      "appliancesToAvoid": "Zu vermeidende Geräte",
+      "appliancesToAvoidDesc": "Spitzenlastzeiten vermeiden",
+      "renewableAvailability": "Verfügbarkeit erneuerbarer Energien",
+      "renewableAvailabilityDesc": "Solar- & Windausrichtung",
+      "appliances": "Geräte"
+    },
+    "bestTime": {
+      "title": "Beste Nutzungszeit für Geräte",
+      "saveAmount": "{amount} € sparen",
+      "ecoScore": "Öko-Score",
+      "bestWindow": "Bestes Zeitfenster",
+      "renewableShare": "Erneuerbarer Anteil",
+      "energyPrice": "Strompreis",
+      "free": "Kostenlos",
+      "estCost": "Geschätzte Kosten",
+      "saving": "Ersparnis"
+    },
+    "avoidAppliances": {
+      "title": "Geräte, die jetzt vermieden werden sollten",
+      "risk": "Risiko",
+      "peakLoadHours": "Spitzenlastzeiten",
+      "estimatedPenalty": "Geschätzte Mehrkosten"
+    },
+    "reasons": {
+      "excellentRenewable": "Ausgezeichnete Verfügbarkeit erneuerbarer Energien",
+      "highRenewable": "Hohe Erzeugung erneuerbarer Energien erwartet",
+      "lowestPrice": "Strompreis gehört heute zu den niedrigsten",
+      "belowAvgPrice": "Stromkosten liegen unter dem Tagesdurchschnitt",
+      "continuousWindow": "{duration}-stündiges kontinuierliches Niedrigpreis-Betriebsfenster gefunden",
+      "strongSolar": "Starke Solarstromerzeugung prognostiziert",
+      "goodWind": "Guter Beitrag durch Windenergie erwartet",
+      "favorableWeather": "Günstige Wetterbedingungen für erneuerbare Erzeugung",
+      "cheaperThanAvg": "Günstiger als der heutige durchschnittliche Strompreis",
+      "renewableAboveAvg": "Verfügbarkeit erneuerbarer Energien liegt über dem Tagesdurchschnitt",
+      "higherThanAvgPrice": "Strompreis ist höher als der Tagesdurchschnitt",
+      "mostExpensiveHours": "Eine der teuersten Stunden heute",
+      "veryLowRenewable": "Sehr geringe Verfügbarkeit erneuerbarer Energien",
+      "renewableBelowAvg": "Erneuerbare Erzeugung unter dem Tagesdurchschnitt",
+      "outsidePreferred": "Außerhalb der bevorzugten Betriebszeiten",
+      "nightTimeDiscouraged": "Nutzung während der Nachtzeit wird nicht empfohlen",
+      "weakSolar": "Schwache Solarstromerzeugung prognostiziert",
+      "lowWind": "Geringer Beitrag durch Windenergie"
+    },
+    "states": {
+      "emptyTitle": "Alle Zeitpläne optimiert",
+      "emptyDesc": "Derzeit sind keine Geräteempfehlungen verfügbar. Ihre Nutzung passt perfekt zu den grünen Zeitfenstern!",
+      "errorDesc": "Empfehlungsdaten konnten leider nicht geladen werden.",
+      "retry": "Wiederholen",
+      "loading": "KI-Empfehlungen werden generiert..."
+    }
+  }
+}

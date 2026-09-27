@@ -1,0 +1,9 @@
+export const applianceExpire = 600;
+export const PriceExpire = 1800;
+export const RenewableExpire = 1800;
+export const userWeeklyConsumptionExpire = 14400;
+export const RenewableScheduleExpire = 1800;
+export const rescheduleApplianceExpire = 10800;
+export const usedApplianceExpire = 10800;
+export const recommendationExpire = 1800;
+export const priceHistoryExpire = 1800;

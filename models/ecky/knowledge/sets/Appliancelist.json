@@ -1,0 +1,116 @@
+[
+  {
+    "name": "evcharger",
+    "category": "High Consumption",
+    "applianceType": "Vehicle",
+    "isReplacable": false
+  },
+  {
+    "name": "washingmachine",
+    "category": "Flexible",
+    "applianceType": "Laundry",
+    "isReplacable": false
+  },
+  {
+    "name": "dishwasher",
+    "category": "Flexible",
+    "applianceType": "Kitchen",
+    "isReplacable": false
+  },
+  {
+    "name": "tumbledryer",
+    "category": "Flexible",
+    "applianceType": "Laundry",
+    "isReplacable": true
+  },
+  {
+    "name": "electricwaterheater",
+    "category": "High Consumption",
+    "applianceType": "Heating",
+    "isReplacable": false
+  },
+  {
+    "name": "heatpump",
+    "category": "High Consumption",
+    "applianceType": "Heating",
+    "isReplacable": false
+  },
+  {
+    "name": "airconditioner",
+    "category": "High Consumption",
+    "applianceType": "Cooling",
+    "isReplacable": true
+  },
+  {
+    "name": "homebatterystorage",
+    "category": "Energy Storage",
+    "applianceType": "Energy Storage",
+    "isReplacable": false
+  },
+  {
+    "name": "electricfloorheating",
+    "category": "High Consumption",
+    "applianceType": "Heating",
+    "isReplacable": false
+  },
+  {
+    "name": "chestfreezer",
+    "category": "Continuous Usage",
+    "applianceType": "Kitchen",
+    "isReplacable": false
+  },
+  {
+    "name": "poolpump",
+    "category": "Flexible",
+    "applianceType": "Water",
+    "isReplacable": true
+  },
+  {
+    "name": "electricoven",
+    "category": "Moderate Consumption",
+    "applianceType": "Kitchen",
+    "isReplacable": true
+  },
+  {
+    "name": "clothesiron",
+    "category": "Moderate Consumption",
+    "applianceType": "Laundry",
+    "isReplacable": true
+  },
+  {
+    "name": "dehumidifier",
+    "category": "Moderate Consumption",
+    "applianceType": "Air",
+    "isReplacable": true
+  },
+  {
+    "name": "airpurifier",
+    "category": "Continuous Usage",
+    "applianceType": "Air",
+    "isReplacable": true
+  },
+  {
+    "name": "saunaheater",
+    "category": "High Consumption",
+    "applianceType": "Heating",
+    "isReplacable": true
+  },
+  {
+    "name": "spaceheater",
+    "category": "High Consumption",
+    "applianceType": "Heating",
+    "isReplacable": true
+  },
+  {
+    "name": "electricboiler",
+    "category": "High Consumption",
+    "applianceType": "Heating",
+    "isReplacable": false
+  },
+  {
+    "name": "waterpump",
+    "category": "Moderate Consumption",
+    "applianceType": "Water",
+    "isReplacable": false
+  }
+]

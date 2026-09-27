@@ -1,0 +1,62 @@
+{
+  "Appliances": {
+    "header": {
+      "title": "Meine Geräte",
+      "description": "Verwalten Sie Haushaltsgeräte für Energieverbrauchsprognosen und Kostenschätzungen.",
+      "searchPlaceholder": "Geräte suchen...",
+      "saveChanges": "Änderungen speichern",
+      "addAppliance": "Gerät hinzufügen",
+      "saveSuccessTitle": "Geräte erfolgreich aktualisiert",
+      "saveSuccessDesc": "Ihre Änderungen wurden gespeichert und auf Ihr Prognosemodell angewendet."
+    },
+    "navCards": {
+      "totalAppliances": "Geräte insgesamt",
+      "activeUnits": "aktive Geräte",
+      "estDailyConsumption": "Geschätzter Tagesverbrauch",
+      "basedOnUsage": "Basierend auf Nutzungsstunden",
+      "estMonthlyCost": "Geschätzte Monatskosten",
+      "projectedExpenditure": "Prognostizierte Ausgaben"
+    },
+    "filters": {
+      "all": "Alle",
+      "active": "Aktiv",
+      "inactive": "Inaktiv",
+      "highUsage": "Hoher Verbrauch",
+      "optimizable": "Optimierbar"
+    },
+    "card": {
+      "rating": "Leistung",
+      "usage": "Nutzung",
+      "daily": "Täglich",
+      "edit": "Bearbeiten",
+      "delete": "Löschen"
+    },
+    "addDialog": {
+      "title": "Gerät hinzufügen",
+      "description": "Fügen Sie Ihrem Haushalt ein neues Gerät hinzu, um dessen Energieverbrauch zu erfassen.",
+      "applianceType": "Gerätetyp",
+      "selectPlaceholder": "Gerät auswählen",
+      "power": "Leistung (Watt)",
+      "dailyUsage": "Tägliche Nutzung (Std.)",
+      "activeAppliance": "Aktives Gerät",
+      "cancel": "Abbrechen",
+      "submit": "Gerät hinzufügen"
+    },
+    "editDialog": {
+      "title": "Gerät bearbeiten",
+      "description": "Aktualisieren Sie die Details Ihres Geräts.",
+      "applianceName": "Gerätename",
+      "power": "Leistung (Watt)",
+      "dailyUsage": "Tägliche Nutzung (Std.)",
+      "activeAppliance": "Aktives Gerät",
+      "cancel": "Abbrechen",
+      "submit": "Gerät aktualisieren"
+    },
+    "deleteDialog": {
+      "title": "Gerät löschen?",
+      "description": "Dieses Gerät wird aus den Energieprognose-Berechnungen entfernt. Diese Aktion kann nicht rückgängig gemacht werden.",
+      "cancel": "Abbrechen",
+      "submit": "Löschen"
+    }
+  }
+}

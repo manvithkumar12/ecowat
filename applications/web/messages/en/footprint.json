@@ -1,0 +1,65 @@
+{
+  "Footprint": {
+    "header": {
+      "title": "Carbon Footprint",
+      "description": "Track your environmental impact, carbon emissions, and sustainability progress."
+    },
+    "kpis": {
+      "weeklyEmissions": "Weekly Emissions",
+      "monthlyEmissions": "Monthly Emissions",
+      "estCo2Reduction": "Estimated CO₂ Reduction",
+      "sustainabilityScore": "Sustainability Score"
+    },
+    "weekly": {
+      "title": "Weekly Carbon Emissions",
+      "subtitle": "Daily CO₂ emissions over the past 7 days.",
+      "highestDay": "Highest Emission Day:",
+      "lowestDay": "Lowest Emission Day:",
+      "averageDaily": "Average Daily Emissions:",
+      "days": {
+        "Sun": "Sun",
+        "Mon": "Mon",
+        "Tue": "Tue",
+        "Wed": "Wed",
+        "Thu": "Thu",
+        "Fri": "Fri",
+        "Sat": "Sat"
+      }
+    },
+    "monthly": {
+      "title": "Monthly Carbon Emissions",
+      "subtitle": "CO₂ emissions throughout the current month.",
+      "warning": "Fewer than 30 days of data recorded. Projections may be inaccurate.",
+      "totalMonthly": "Total Monthly Emissions",
+      "averageDaily": "Average Daily Emissions",
+      "projectedMonthly": "Projected Monthly Emissions"
+    },
+    "reduction": {
+      "title": "Projected Carbon Reduction",
+      "subtitle": "Expected emission reductions over the next 7 days.",
+      "projectedWeekly": "Projected Weekly Reduction:"
+    },
+    "equivalents": {
+      "title": "Environmental Equivalents",
+      "reducedSummary": "Your emissions reduced by −{amount} kg CO₂ from {start} to {end}. This weekly reduction is equivalent to:",
+      "increasedSummary": "Your emissions increased by +{amount} kg CO₂ from {start} to {end}. This weekly increase is equivalent to:",
+      "treesAbsorbed": "Trees Worth of CO₂ Absorbed",
+      "treesNeeded": "Trees Needed to Offset",
+      "carAvoided": "of Car Travel Avoided",
+      "carEmitted": "of Extra Car Travel Emitted",
+      "ledPowered": "of LED Lighting Powered",
+      "ledEmitted": "of LED Lighting Emitted",
+      "savingsHousehold": "Significant Household Carbon Savings",
+      "increaseHousehold": "Significant Household Carbon Increase"
+    },
+    "states": {
+      "unableWeeklyTitle": "Unable to load weekly data",
+      "unableWeeklyDesc": "Something went wrong while fetching your emissions chart.",
+      "unableMonthlyTitle": "Unable to load monthly data",
+      "unableMonthlyDesc": "Something went wrong while fetching your monthly emissions.",
+      "unableReductionTitle": "Unable to load reduction forecast",
+      "unableReductionDesc": "Something went wrong while fetching your carbon reduction prediction.",
+      "retry": "Retry"
+    }
+  }
+}

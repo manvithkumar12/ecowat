@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "DailyUsage" ADD COLUMN     "kwUsed" DOUBLE PRECISION NOT NULL DEFAULT 0;

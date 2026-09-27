@@ -1,0 +1,116 @@
+.ecowatt-time-picker {
+  width: 100%;
+  position: relative;
+}
+
+.ecowatt-time-picker .react-time-picker {
+  width: 100%;
+  display: inline-flex;
+}
+
+.ecowatt-time-picker .react-time-picker__wrapper {
+  width: 100%;
+  height: 32px;
+  min-height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+  padding: 0 8px;
+
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  transition: all 0.15s ease;
+}
+
+.ecowatt-time-picker .react-time-picker__wrapper:focus-within {
+  border-color: #10b981;
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.15);
+}
+
+/* Input group */
+.ecowatt-time-picker .react-time-picker__inputGroup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  width: auto;
+  min-width: 0;
+  padding: 0;
+}
+
+/* Hour / minute fields */
+.ecowatt-time-picker .react-time-picker__inputGroup__input {
+  appearance: none;
+  -webkit-appearance: none;
+  border: 0 !important;
+  outline: 0 !important;
+  background: transparent !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  height: 24px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  color: #1e293b;
+  text-align: center;
+  box-shadow: none !important;
+}
+
+.ecowatt-time-picker .react-time-picker__inputGroup__hour {
+  width: 2.2ch !important;
+  min-width: 2.2ch !important;
+  max-width: 2.2ch !important;
+}
+
+.ecowatt-time-picker .react-time-picker__inputGroup__minute {
+  width: 2.2ch !important;
+  min-width: 2.2ch !important;
+  max-width: 2.2ch !important;
+}
+
+.ecowatt-time-picker .react-time-picker__inputGroup__input::-webkit-inner-spin-button,
+.ecowatt-time-picker .react-time-picker__inputGroup__input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Divider / Colon */
+.ecowatt-time-picker .react-time-picker__inputGroup__divider {
+  display: inline-block;
+  width: auto !important;
+  margin: 0 1px;
+  color: #64748b;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace !important;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* Hide clear & clock buttons completely */
+.ecowatt-time-picker .react-time-picker__clear-button,
+.ecowatt-time-picker .react-time-picker__clock-button {
+  display: none !important;
+}
+
+/* Dark mode */
+.dark .ecowatt-time-picker .react-time-picker__wrapper {
+  background: #181818;
+  border-color: #2a2a2a;
+}
+
+.dark .ecowatt-time-picker .react-time-picker__wrapper:focus-within {
+  border-color: #10b981;
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.2);
+}
+
+.dark .ecowatt-time-picker .react-time-picker__inputGroup__input {
+  color: #f1f5f9;
+}
+
+.dark .ecowatt-time-picker .react-time-picker__inputGroup__divider {
+  color: #94a3b8;
+}
+

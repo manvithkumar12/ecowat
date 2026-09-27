@@ -1,0 +1,75 @@
+{
+  "Schedule": {
+    "header": {
+      "title": "Heutiger Geräte-Zeitplan",
+      "timezoneActive": "Deutsche Zeitzone aktiv",
+      "description": "Verwalten Sie geplante Betriebszyklen für Ihre Haushaltsgeräte in Abhängigkeit von Netzpreisen und erneuerbaren Fenstern.",
+      "berlinLocalTime": "Berliner Ortszeit",
+      "loading": "Laden...",
+      "addAppliance": "Gerät hinzufügen"
+    },
+    "sections": {
+      "upcoming": "Bevorstehend",
+      "pending": "Ausstehend",
+      "completed": "Abgeschlossen"
+    },
+    "card": {
+      "usageTime": "Nutzungszeit",
+      "duration": "Dauer",
+      "power": "Leistung",
+      "rating": "Bewertung",
+      "cost": "Kosten",
+      "startRun": "Betrieb starten",
+      "reschedule": "Verschieben",
+      "markAsUsed": "Als genutzt markieren",
+      "remove": "Entfernen",
+      "runCompleted": "Betrieb abgeschlossen",
+      "applianceFallback": "Gerät",
+      "generalCategory": "Allgemein"
+    },
+    "empty": {
+      "noUpcomingTitle": "Keine bevorstehenden Zeitpläne",
+      "noUpcomingDesc": "Keine bevorstehenden Aufgaben mehr. Generieren Sie einen neuen optimierten Zeitplan.",
+      "noPendingTitle": "Keine ausstehenden Zeitpläne",
+      "noPendingDesc": "Alle vergangenen Zeitfenster wurden als genutzt oder abgeschlossen markiert. Gute Arbeit!",
+      "noCompletedTitle": "Keine abgeschlossenen Zeitpläne",
+      "noCompletedDesc": "Zeitpläne, die in den heutigen Zeitintervallen als ausgeführt markiert wurden, erscheinen hier.",
+      "generateAiSchedule": "KI-Zeitplan generieren"
+    },
+    "addDialog": {
+      "title": "Geräte-Zeitplan hinzufügen",
+      "description": "Erstellen Sie einen manuellen Geräte-Zeitplaneintrag für heute.",
+      "applianceName": "Gerätename",
+      "savedAppliances": "Gespeicherte Geräte",
+      "selectPlaceholder": "Gerätetyp auswählen",
+      "power": "Leistung (Watt)",
+      "powerPlaceholder": "z.B. 1500",
+      "operatingPeriod": "Betriebszeitraum (24h-Format)",
+      "to": "bis",
+      "duration": "Dauer",
+      "usage": "Verbrauch",
+      "estCost": "Geschätzte Kosten",
+      "cancel": "Abbrechen",
+      "addToSchedule": "Zum Zeitplan hinzufügen",
+      "validationFillAll": "Bitte füllen Sie alle Felder aus.",
+      "validationInvalidTime": "Bitte geben Sie eine gültige 24-Stunden-Zeit ein (z.B. 14:30).",
+      "validationFutureTime": "Die Startzeit muss in der Zukunft nach {time} liegen.",
+      "validationEndTimeAfterStart": "Die Endzeit muss nach der Startzeit liegen.",
+      "toastAdded": "{name} Zeitplan erfolgreich hinzugefügt!"
+    },
+    "errors": {
+      "failedTitle": "Zeitplandaten konnten nicht geladen werden",
+      "fetchSchedules": "Ihre Zeitpläne konnten nicht abgerufen werden. ",
+      "loadAppliances": "Geräte konnten nicht geladen werden. ",
+      "loadRecs": "Empfehlungen konnten nicht geladen werden. ",
+      "retrySuffix": "Bitte versuchen Sie es erneut.",
+      "retry": "Wiederholen"
+    },
+    "toasts": {
+      "markCompleted": "Gerätebetrieb als abgeschlossen markiert!",
+      "removed": "Zeitplan entfernt.",
+      "generatedSuccess": "Zeitplan erfolgreich generiert!",
+      "generatedFail": "Zeitplan konnte nicht generiert werden."
+    }
+  }
+}

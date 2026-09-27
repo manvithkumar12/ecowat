@@ -1,0 +1,187 @@
+{
+  "Dashboard": {
+    "header": {
+      "title": "Energy Intelligence Dashboard",
+      "aiForecastsActive": "AI Forecasts Active",
+      "description": "Monitor electricity pricing, renewable energy availability, consumption patterns, and future energy forecasts.",
+      "exportReport": "Export Report",
+      "exporting": "Exporting...",
+      "exportFailed": "Failed to export report"
+    },
+    "priceCard": {
+      "currentPrice": "Current Price",
+      "vsAverage": "vs Today's average",
+      "viewHourlyData": "View Hourly Data"
+    },
+    "renewableCard": {
+      "title": "Renewable Potential",
+      "availability": "Renewable Energy Availability",
+      "viewBestHours": "View Best Hours",
+      "noData": "No renewable potential data available",
+      "retry": "Retry"
+    },
+    "consumptionCard": {
+      "title": "Today's Consumption",
+      "vsYesterday": "vs Yesterday Usage",
+      "viewBreakdown": "View Usage Breakdown",
+      "new": "New"
+    },
+    "weeklyCard": {
+      "title": "Estimated Weekly Cost",
+      "subtitle": "Predicted spend matching budget",
+      "viewDailyCost": "View Daily Cost"
+    },
+    "insights": {
+      "title": "Smart Recommendations",
+      "basedOn": "Based on your",
+      "savedAppliances": "saved Appliances",
+      "subtitle": "Real-time scheduling recommendations to maximize efficiency",
+      "activePlans": "Active Savings Plan",
+      "save": "Save",
+      "penalty": "Penalty",
+      "run": "Run",
+      "between": "between",
+      "dontRun": "Don't Run",
+      "during": "during"
+    },
+    "consumptionForecast": {
+      "title": "Consumption Forecast",
+      "subtitle": "Predicted household energy usage for the next 7 days",
+      "actual": "Actual",
+      "predicted": "Predicted",
+      "loading": "Loading forecast...",
+      "failed": "Failed to load forecast data.",
+      "retry": "Retry",
+      "estimatedNotice": "Estimated consumption data. We need at least 7 days of usage history before generating personalized forecasts.",
+      "estimatedTooltip": "This is estimated consumption data, not an AI-generated prediction. EcoWatt requires at least 7 days of usage history to generate personalized energy forecasts. Once sufficient data is collected, your forecast will automatically switch to model-generated predictions."
+    },
+    "priceForecast": {
+      "title": "Price Forecast",
+      "subtitle": "Expected electricity price changes",
+      "noDataTitle": "No price data available",
+      "noDataDesc": "Forecast data will appear here once predictions are generated.",
+      "failedTitle": "Failed to load forecast",
+      "failedDesc": "We couldn't fetch the latest price data. Please try again.",
+      "retry": "Retry"
+    },
+    "renewableForecast": {
+      "title": "Renewable Energy Forecast",
+      "subtitle": "Expected solar and wind contributions next 7 days",
+      "solar": "Solar",
+      "wind": "Wind",
+      "loading": "Loading renewable forecast...",
+      "failed": "Failed to load renewable forecast",
+      "tryAgain": "Please try again later.",
+      "retry": "Retry"
+    },
+    "applianceBreakdown": {
+      "title": "Appliance Breakdown",
+      "subtitle": "Estimated energy usage and cost by appliance",
+      "total": "Total",
+      "applianceName": "Appliance Name",
+      "energyUsage": "Energy Usage",
+      "cost": "Cost",
+      "totalConsumptionToday": "Total Consumption Today",
+      "totalCostToday": "Total Cost Today",
+      "currentPrice": "Current Electricity Price"
+    },
+    "popups": {
+      "hourlyPrice": {
+        "title": "Hourly Price Breakdown",
+        "subtitle": "Today's electricity rates by hour",
+        "timeWindow": "Time Window",
+        "price": "Price",
+        "status": "Status",
+        "current": "Current",
+        "cheap": "Cheap",
+        "peak": "Peak",
+        "normal": "Normal",
+        "average": "Average (Next 24h):",
+        "source": "Source: aWATTar (EPEX Spot Market)",
+        "close": "Close"
+      },
+      "consumptionDetails": {
+        "title": "Recent Usage Breakdown",
+        "subtitle": "Top 3 recently used applications with rating, usage and energy impact",
+        "application": "Application",
+        "rating": "Rating (W)",
+        "noApplicationsFound": "No Applications Found",
+        "noAppliancesInfo": "No recent appliance usage data is available yet. Add and use appliances to view consumption insights here.",
+        "usage": "Usage (hrs)",
+        "consumption": "Consumption",
+        "totalConsumption": "Total consumption:",
+        "totalUsage": "Total usage:",
+        "gotIt": "Got it",
+        "acrossApps": "hrs across the latest 3 applications",
+        "close": "Close"
+      },
+      "weeklyCostDetails": {
+        "title": "Daily Cost Breakdown",
+        "subtitle": "Estimated spend from Monday through Sunday",
+        "day": "Day",
+        "cost": "Cost",
+        "monday": "Monday",
+        "tuesday": "Tuesday",
+        "wednesday": "Wednesday",
+        "thursday": "Thursday",
+        "friday": "Friday",
+        "saturday": "Saturday",
+        "sunday": "Sunday",
+        "status": "Status",
+        "estimated": "Estimated",
+        "recorded": "Recorded",
+        "weeklyTotal": "Weekly total:",
+        "averageDailyCost": "Average daily cost:",
+        "close": "Close"
+      },
+      "renewableDetails": {
+        "title": "Renewable Insights",
+        "live": "Live",
+        "germanyTime": "Germany Time",
+        "ecoPotential": "Eco Potential",
+        "status": "Status",
+        "solarGeneration": "Solar Generation",
+        "solarFactor": "Average solar grid factor today",
+        "windGeneration": "Wind Generation",
+        "windFactor": "Average wind velocity factor",
+        "peakWindows": "Peak Green Energy Windows",
+        "timelineTitle": "24-Hour Renewable Timeline",
+        "timelineSubtitle": "Green potential index level forecast across today",
+        "ecoIndex": "Eco Index",
+        "actionsTitle": "Recommended Grid Efficiency Actions",
+        "shiftApplianceTitle": "Shift Heavy Appliance Starts",
+        "shiftApplianceDesc": "Schedule washing machines, dishwashers, and pool pumps within high green index hours to optimize your personal score.",
+        "coordinateChargingTitle": "Coordinate Charging",
+        "coordinateChargingDesc": "If solar availability is high, plugin EV chargers to make direct use of local clean energy generation.",
+        "currentPeakStatus": "Current Peak Status",
+        "scoreLabel": "Score",
+        "gridLabel": "Grid",
+        "close": "Close"
+      },
+      "insightPopup": {
+        "optimizationInsights": "Optimization Insights",
+        "benefitsRec": "Benefits of using in this time",
+        "benefitsAvoid": "Benefits of avoiding this time",
+        "timeSlot": "Time Slot:",
+        "financialSavings": "Financial Savings",
+        "avoidedPenalty": "Avoided Penalty",
+        "renewableShare": "Renewable Share",
+        "clean": "Clean",
+        "electricityPrice": "Electricity Price",
+        "riskScore": "Risk Score",
+        "free": "Free",
+        "risk": "Risk",
+        "ecoEfficiency": "Eco Efficiency",
+        "gridLoadState": "Grid Load State",
+        "score": "Score",
+        "highLoadPeak": "High Load Peak",
+        "whyTitle": "Why this recommendation?",
+        "gotIt": "Got it, thanks!"
+      },
+      "statError": {
+        "message": "Sorry, unable to fetch data",
+        "retry": "Retry"
+      }
+    }
+  }
+}

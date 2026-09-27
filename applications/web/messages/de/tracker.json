@@ -1,0 +1,77 @@
+{
+  "Tracker": {
+    "header": {
+      "title": "Verbrauchs-Tracker",
+      "description": "Erfassen, überwachen und prüfen Sie tägliche Geräte-Energieprotokolle und dynamische Stromtarife.",
+      "addApplianceLog": "Geräteprotokoll hinzufügen",
+      "auditPeriod": "Prüfzeitraum:",
+      "selectDate": "Datum auswählen",
+      "usedApplianceList": "Genutzte Geräte ({date})",
+      "pleaseLogIn": "Bitte melden Sie sich an, um den Verbrauch zu erfassen."
+    },
+    "stats": {
+      "todayCost": "Heutige Kosten",
+      "dayCost": "Kosten am {date}",
+      "dayCostSubtitle": "Für erfasste Nutzungen an diesem Tag",
+      "past30DaysCost": "Kosten der letzten 30 Tage",
+      "past30DaysCostSubtitle": "Gesamtkosten der vergangenen 30 Tage",
+      "past30DaysSavings": "Ersparnis (letzte 30 Tage)",
+      "past30DaysSavingsSubtitle": "Im Vergleich zum Standardtarif von 0,35 €",
+      "totalLoggedAppliances": "Erfasste Geräte gesamt",
+      "totalLoggedAppliancesSubtitle": "Genutzte Geräte am ausgewählten Tag"
+    },
+    "card": {
+      "loggedUsage": "Erfasste Nutzung",
+      "rating": "Leistung",
+      "duration": "Dauer",
+      "calculated": "Berechnet",
+      "totalPrice": "Gesamtpreis"
+    },
+    "livePrice": {
+      "title": "Aktueller Netzstrompreis",
+      "liveRate": "Live-Tarif",
+      "description": "Dynamisch abgerufene Strompreise aus dem Versorgungsnetz.",
+      "gridSubject": "Preise abhängig vom aktuellen Netzbetrieb",
+      "engine": "EcoWatt Engine"
+    },
+    "empty": {
+      "title": "Keine genutzten Geräte erfasst",
+      "description": "Keine Verbrauchsdaten für {date} erfasst. Klicken Sie auf „Geräteprotokoll hinzufügen“, um Betriebszeiten aufzuzeichnen."
+    },
+    "addModal": {
+      "title": "Erfasstes Gerät hinzufügen",
+      "description": "Erfassen Sie Gerätelaufzeiten, um tägliche Verbrauchsmuster aufzuzeichnen",
+      "applianceName": "Gerätename",
+      "selectPlaceholder": "Gerätetyp auswählen",
+      "rating": "Leistung (Watt)",
+      "ratingPlaceholder": "z.B. 1500",
+      "operatingPeriod": "Betriebszeitraum",
+      "to": "bis",
+      "startPlaceholder": "Startzeit",
+      "endPlaceholder": "Endzeit",
+      "duration": "Dauer",
+      "usage": "Verbrauch",
+      "estCost": "Geschätzte Kosten",
+      "cancel": "Abbrechen",
+      "logging": "Wird erfasst...",
+      "addBtn": "Zum Tracker hinzufügen",
+      "fillAll": "Bitte füllen Sie alle Felder aus.",
+      "successToast": "Geräteverbrauch erfolgreich hinzugefügt!",
+      "errorToast": "Etwas ist schiefgelaufen."
+    },
+    "editModal": {
+      "title": "Geräteprotokoll bearbeiten",
+      "description": "Passen Sie die Leistungsparameter oder die Erfassungsdauer für diesen Datensatz an.",
+      "applianceName": "Gerätename",
+      "rating": "Leistung (Watt)",
+      "operatingPeriod": "Betriebszeitraum",
+      "to": "bis",
+      "duration": "Dauer",
+      "estConsumption": "Geschätzter Verbrauch",
+      "estCost": "Geschätzte Kosten",
+      "cancel": "Abbrechen",
+      "updating": "Wird aktualisiert...",
+      "saveChanges": "Änderungen speichern"
+    }
+  }
+}

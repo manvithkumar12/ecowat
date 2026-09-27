@@ -1,0 +1,16 @@
+{
+  "Sidebar": {
+    "dashboard": "Dashboard",
+    "forecast": "Forecast",
+    "appliances": "Appliances",
+    "recommendations": "Recommendations",
+    "schedule": "Scheduler",
+    "tracker": "Tracker",
+    "footprint": "Footprint",
+    "priceHistory": "Price History",
+    "ecky": "Ecky",
+    "docs": "Docs",
+    "assistantTitle": "EcoAssistant",
+    "assistantSubtitle": "Grid Optimized"
+  }
+}

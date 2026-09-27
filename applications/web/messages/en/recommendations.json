@@ -1,0 +1,67 @@
+{
+  "Recommendations": {
+    "header": {
+      "title": "Smart Recommendations",
+      "basedOn": "(Based on your <link>saved Appliances</link>)",
+      "description": "AI-powered scheduling optimizations designed to minimize grid costs and maximize local renewable utility.",
+      "refreshing": "Refreshing...",
+      "refresh": "Refresh Recommendations",
+      "viewForecast": "View Forecast"
+    },
+    "summaryCards": {
+      "potentialSavings": "Potential Savings Today",
+      "potentialSavingsDesc": "Total savings",
+      "recommendedActions": "Recommended Appliance Actions",
+      "recommendedActionsDesc": "Schedule load shifts",
+      "appliancesToAvoid": "Appliances to avoid",
+      "appliancesToAvoidDesc": "Avoid peak time usage",
+      "renewableAvailability": "Renewable Energy Availability",
+      "renewableAvailabilityDesc": "Solar & wind alignment",
+      "appliances": "Appliances"
+    },
+    "bestTime": {
+      "title": "Best Time to Use Appliances",
+      "saveAmount": "Save €{amount}",
+      "ecoScore": "Eco Score",
+      "bestWindow": "Best Window",
+      "renewableShare": "Renewable Share",
+      "energyPrice": "Energy Price",
+      "free": "Free",
+      "estCost": "Est. Cost",
+      "saving": "Saving"
+    },
+    "avoidAppliances": {
+      "title": "Appliances to Avoid Right Now",
+      "risk": "Risk",
+      "peakLoadHours": "Peak Load Hours",
+      "estimatedPenalty": "Estimated Penalty"
+    },
+    "reasons": {
+      "excellentRenewable": "Excellent renewable energy availability",
+      "highRenewable": "High renewable energy generation expected",
+      "lowestPrice": "Electricity price is among the lowest today",
+      "belowAvgPrice": "Electricity cost is below daily average",
+      "continuousWindow": "{duration} hour continuous low-cost operating window found",
+      "strongSolar": "Strong solar generation forecast",
+      "goodWind": "Good wind energy contribution expected",
+      "favorableWeather": "Favorable weather conditions for renewable generation",
+      "cheaperThanAvg": "Cheaper than the average electricity price today",
+      "renewableAboveAvg": "Renewable energy availability is above daily average",
+      "higherThanAvgPrice": "Electricity price is higher than daily average",
+      "mostExpensiveHours": "One of the most expensive hours today",
+      "veryLowRenewable": "Very low renewable energy availability",
+      "renewableBelowAvg": "Renewable generation below daily average",
+      "outsidePreferred": "Outside preferred operating hours",
+      "nightTimeDiscouraged": "Night-time usage is discouraged",
+      "weakSolar": "Weak solar generation forecast",
+      "lowWind": "Low wind energy contribution"
+    },
+    "states": {
+      "emptyTitle": "All Schedules Optimized",
+      "emptyDesc": "No appliance recommendations are available at the moment. Your usage matches perfectly with the green windows!",
+      "errorDesc": "Sorry, unable to fetch recommendation data.",
+      "retry": "Retry",
+      "loading": "Generating AI Recommendations..."
+    }
+  }
+}

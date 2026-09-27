@@ -1,0 +1,54 @@
+{
+  "PriceHistory": {
+    "header": {
+      "title": "Electricity Price History",
+      "badge": "aWATTar EPEX Spot",
+      "description": "Historical day-ahead electricity prices for Germany in EUR/kWh."
+    },
+    "presets": {
+      "past24h": "Past 24h",
+      "days3": "3 Days",
+      "days7": "7 Days",
+      "days30": "30 Days"
+    },
+    "filter": {
+      "from": "From:",
+      "to": "To:",
+      "updating": "Updating...",
+      "applyFilter": "Apply Filter",
+      "table": "Table",
+      "chart": "Chart"
+    },
+    "metrics": {
+      "avgPrice": "Avg Price",
+      "avgAcross": "Average across {count} hours",
+      "lowestPrice": "Lowest Price",
+      "peakPrice": "Peak Price",
+      "at": "At: {slot}",
+      "totalSlots": "Total Slots",
+      "hours": "hours",
+      "range": "{start} to {end}"
+    },
+    "chart": {
+      "title": "Hourly Tariff Progression",
+      "description": "Dynamic spot market price curve over the selected time window.",
+      "noData": "No price data available for the chosen date range.",
+      "avgLabel": "Avg €{value}"
+    },
+    "table": {
+      "dateHour": "Date & Hour",
+      "eurKwh": "EUR / kWh",
+      "centKwh": "Cent / kWh",
+      "epex": "EPEX (€/MWh)",
+      "relativeTier": "Relative Tier",
+      "tierCheap": "Cheap",
+      "tierHigh": "High",
+      "tierAverage": "Average"
+    },
+    "states": {
+      "errorTitle": "Unable to load price history",
+      "errorDesc": "Something went wrong while fetching electricity spot market prices.",
+      "retry": "Retry"
+    }
+  }
+}

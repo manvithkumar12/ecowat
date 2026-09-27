@@ -1,0 +1,54 @@
+{
+  "PriceHistory": {
+    "header": {
+      "title": "Strompreishistorie",
+      "badge": "aWATTar EPEX Spot",
+      "description": "Historische Day-Ahead-Strompreise für Deutschland in EUR/kWh."
+    },
+    "presets": {
+      "past24h": "Letzte 24h",
+      "days3": "3 Tage",
+      "days7": "7 Tage",
+      "days30": "30 Tage"
+    },
+    "filter": {
+      "from": "Von:",
+      "to": "Bis:",
+      "updating": "Wird aktualisiert...",
+      "applyFilter": "Filter anwenden",
+      "table": "Tabelle",
+      "chart": "Diagramm"
+    },
+    "metrics": {
+      "avgPrice": "Durchschnittspreis",
+      "avgAcross": "Durchschnitt über {count} Stunden",
+      "lowestPrice": "Niedrigster Preis",
+      "peakPrice": "Spitzenpreis",
+      "at": "Um: {slot}",
+      "totalSlots": "Zeitfenster gesamt",
+      "hours": "Stunden",
+      "range": "{start} bis {end}"
+    },
+    "chart": {
+      "title": "Stündlicher Tarifverlauf",
+      "description": "Dynamische Spotmarkt-Preiskurve über das gewählte Zeitfenster.",
+      "noData": "Keine Preisdaten für den gewählten Datumsbereich verfügbar.",
+      "avgLabel": "Ø €{value}"
+    },
+    "table": {
+      "dateHour": "Datum & Uhrzeit",
+      "eurKwh": "EUR / kWh",
+      "centKwh": "Cent / kWh",
+      "epex": "EPEX (€/MWh)",
+      "relativeTier": "Preisstufe",
+      "tierCheap": "Günstig",
+      "tierHigh": "Hoch",
+      "tierAverage": "Mittel"
+    },
+    "states": {
+      "errorTitle": "Preishistorie konnte nicht geladen werden",
+      "errorDesc": "Beim Abrufen der Spotmarkt-Strompreise ist ein Fehler aufgetreten.",
+      "retry": "Wiederholen"
+    }
+  }
+}

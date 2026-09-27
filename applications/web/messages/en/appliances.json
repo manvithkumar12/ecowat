@@ -1,0 +1,62 @@
+{
+  "Appliances": {
+    "header": {
+      "title": "My Appliances",
+      "description": "Manage household appliances used for energy consumption forecasting and cost estimation.",
+      "searchPlaceholder": "Search appliances...",
+      "saveChanges": "Save Changes",
+      "addAppliance": "Add Appliance",
+      "saveSuccessTitle": "Appliances updated successfully",
+      "saveSuccessDesc": "Your changes have been saved and applied to your forecasting model."
+    },
+    "navCards": {
+      "totalAppliances": "Total Appliances",
+      "activeUnits": "active units",
+      "estDailyConsumption": "Est. Daily Consumption",
+      "basedOnUsage": "Based on usage hours",
+      "estMonthlyCost": "Est. Monthly Cost",
+      "projectedExpenditure": "Projected expenditure"
+    },
+    "filters": {
+      "all": "All",
+      "active": "Active",
+      "inactive": "Inactive",
+      "highUsage": "High Usage",
+      "optimizable": "Optimizable"
+    },
+    "card": {
+      "rating": "Rating",
+      "usage": "Usage",
+      "daily": "Daily",
+      "edit": "Edit",
+      "delete": "Delete"
+    },
+    "addDialog": {
+      "title": "Add Appliance",
+      "description": "Add a new appliance to your household to track its energy usage.",
+      "applianceType": "Appliance Type",
+      "selectPlaceholder": "Select appliance",
+      "power": "Power (Watts)",
+      "dailyUsage": "Daily Usage (h)",
+      "activeAppliance": "Active Appliance",
+      "cancel": "Cancel",
+      "submit": "Add Appliance"
+    },
+    "editDialog": {
+      "title": "Edit Appliance",
+      "description": "Update the details of your appliance.",
+      "applianceName": "Appliance Name",
+      "power": "Power (Watts)",
+      "dailyUsage": "Daily Usage (h)",
+      "activeAppliance": "Active Appliance",
+      "cancel": "Cancel",
+      "submit": "Update Appliance"
+    },
+    "deleteDialog": {
+      "title": "Delete Appliance?",
+      "description": "This appliance will be removed from energy forecasting calculations. This action cannot be undone.",
+      "cancel": "Cancel",
+      "submit": "Delete"
+    }
+  }
+}

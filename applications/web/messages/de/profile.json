@@ -1,0 +1,47 @@
+{
+  "Profile": {
+    "loading": "Profil wird geladen...",
+    "header": {
+      "title": "Profil",
+      "description": "Verwalten Sie Ihre Kontoinformationen und persönlichen Daten."
+    },
+    "personalInfo": {
+      "title": "Persönliche Daten",
+      "fullName": "Vollständiger Name",
+      "email": "E-Mail-Adresse",
+      "isVerified": "ist verifiziert",
+      "no": "Nein",
+      "yes": "Ja",
+      "Verified": "Verifiziert",
+      "id": "Benutzer-ID"
+    },
+    "actions": {
+      "editProfile": "Profil bearbeiten",
+      "changePassword": "Passwort ändern",
+      "deleteAccount": "Konto löschen"
+    },
+    "changePasswordDialog": {
+      "title": "Passwort ändern",
+      "description": "Geben Sie Ihr aktuelles und Ihr neues Passwort ein, um Ihre Anmeldedaten zu aktualisieren.",
+      "oldPassword": "Altes Passwort",
+      "oldPasswordPlaceholder": "Aktuelles Passwort eingeben",
+      "newPassword": "Neues Passwort",
+      "newPasswordPlaceholder": "Neues Passwort eingeben",
+      "confirmPassword": "Neues Passwort bestätigen",
+      "confirmPasswordPlaceholder": "Neues Passwort erneut eingeben",
+      "cancel": "Abbrechen",
+      "submit": "Passwort aktualisieren",
+      "success": "Passwort erfolgreich aktualisiert.",
+      "error": "Passwort konnte nicht aktualisiert werden. Bitte überprüfen Sie Ihr aktuelles Passwort."
+    },
+    "deleteDialog": {
+      "title": "Konto löschen?",
+      "description": "Diese Aktion kann nicht rückgängig gemacht werden. Alle Kontoinformationen und gespeicherten Daten werden dauerhaft gelöscht.",
+      "instruction": "Bitte geben Sie \"Delete my account\" zur Bestätigung ein:",
+      "confirmationPhrase": "Delete my account",
+      "inputPlaceholder": "Delete my account",
+      "cancel": "Abbrechen",
+      "confirm": "Konto löschen"
+    }
+  }
+}

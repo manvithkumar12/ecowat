@@ -1,0 +1,97 @@
+{
+  "Navbar": {
+    "dashboard": "Dashboard",
+    "forecast": "Prognose",
+    "analytics": "Analytik",
+    "recommendations": "Empfehlungen",
+    "language": "Sprache / Language",
+    "english": "English (EN)",
+    "german": "Deutsch (DE)",
+    "Notifications": "Benachrichtigungen",
+    "Theme": "Theme wechseln",
+    "login": "Anmelden / Registrieren",
+    "schedule": "Zeitplan",
+    "tracker": "Tracker",
+    "appliances": "Geräte"
+  },
+  "profile": {
+    "profile": "Profil",
+    "Logout": "Abmelden",
+    "settings": "Einstellungen"
+  },
+  "Hero": {
+    "badge": "Intelligente Energieprognose",
+    "title": "Energieverbrauch vorhersagen. Kosten senken. Eine grünere Zukunft gestalten.",
+    "description": "KI-gestützte Energieprognose und intelligente Haushaltsgeräte-Planung, die Familien dabei hilft, ihren Stromverbrauch zu optimieren und an die Verfügbarkeit erneuerbarer Energien anzupassen.",
+    "getStarted": "Jetzt starten",
+    "learnMore": "Mehr erfahren"
+  },
+  "Optimized": {
+    "badge": "Optimierte Intelligenz",
+    "title": "Entwickelt für moderne Stromnetze",
+    "description": "EcoWatt analysiert dynamische Parameter, damit Haushalte ihren Strombedarf zuverlässig und gezielt steuern können.",
+    "feature1Title": "Energieprognose",
+    "feature1Desc": "Prognostizieren Sie künftige Verbrauchsmuster mithilfe fortschrittlicher regionaler Lastprognosemodelle.",
+    "feature2Title": "Erneuerbare Energien im Blick",
+    "feature2Desc": "Erkennen Sie optimale Zeitfenster basierend auf lokaler Solar- und Windenergieerzeugung.",
+    "feature3Title": "Kostenoptimierung",
+    "feature3Desc": "Finden Sie günstigere Zeiten für energieintensive Geräte während Niedrigpreisphasen im Stromnetz.",
+    "feature4Title": "Intelligente Empfehlungen",
+    "feature4Desc": "Erhalten Sie personalisierte Zeitpläne für Ihre Geräte, optimal abgestimmt auf Komfort und Netzkapazität."
+  },
+  "Work": {
+    "badge": "Einfache Einrichtung",
+    "title": "So funktioniert's",
+    "description": "Integrieren Sie intelligentes Energiemanagement in drei einfachen Schritten in Ihr Zuhause.",
+    "step1Title": "Verbrauchsdaten erfassen",
+    "step1Desc": "Verbinden Sie Smart Meter oder gängige Überwachungssysteme Ihres Haushalts.",
+    "step2Title": "Prognosen erstellen",
+    "step2Desc": "EcoWatt verarbeitet lokale Netzdaten und Umweltfaktoren in Echtzeit.",
+    "step3Title": "Verbrauch optimieren",
+    "step3Desc": "Erhalten Sie optimierte Zeitpläne, um stromintensive Geräte automatisch optimal zu betreiben."
+  },
+  "Benefits": {
+    "badge": "Hauptvorteile",
+    "title": "Warum EcoWatt?",
+    "description": "Entwickelt für nachhaltigen Verbrauch bei vollem Komfort für Ihr Zuhause.",
+    "benefit1Title": "Energiekosten senken",
+    "benefit1Desc": "Finden Sie ideale Betriebszeiten für Heizung und Kühlung, um von günstigen Tarifen zu profitieren.",
+    "benefit2Title": "Erneuerbare Energien maximieren",
+    "benefit2Desc": "Nutzen Sie saubere Energiequellen optimal durch gezielten Betrieb bei Solar- und Windüberschuss.",
+    "benefit3Title": "Umweltauswirkungen nachverfolgen",
+    "benefit3Desc": "Behalten Sie Ihren CO₂-Fußabdruck genau im Auge und erreichen Sie Ihre Nachhaltigkeitsziele.",
+    "benefit4Title": "Klügere Entscheidungen treffen",
+    "benefit4Desc": "Planen Sie energieintensive Aufgaben vorausschauend mit verlässlichen Vorhersagemodellen."
+  },
+  "CTA": {
+    "title": "Bereit, Ihren Energieverbrauch im Haushalt zu optimieren?",
+    "description": "Treffen Sie noch heute intelligentere Energieentscheidungen mit KI-gestützten Prognosen und Empfehlungen.",
+    "getStarted": "Jetzt starten",
+    "contactUs": "Kontakt aufnehmen"
+  },
+  "Footer": {
+    "description": "KI-gestützte Energieprognose und intelligente Geräteplanung für ein smartes, nachhaltiges Zuhause.",
+    "product": "Produkt",
+    "resources": "Ressourcen",
+    "company": "Unternehmen",
+    "stayUpdated": "Bleiben Sie informiert",
+    "newsletterDesc": "Erhalten Sie Produktneuheiten und wertvolle Einblicke in den Energiemarkt.",
+    "copyright": "EcoWatt. Alle Rechte vorbehalten.",
+    "builtWith": "Erstellt mit Next.js & KI-Prognose",
+    "features": "Funktionen",
+    "forecasting": "Prognose",
+    "analytics": "Analytik",
+    "smartRecommendations": "Smarte Empfehlungen",
+    "applianceScheduling": "Geräte-Zeitplanung",
+    "documentation": "Dokumentation",
+    "apiReference": "API-Referenz",
+    "blog": "Blog",
+    "helpCenter": "Hilfezentrum",
+    "faq": "Häufige Fragen",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "careers": "Karriere",
+    "privacyPolicy": "Datenschutz",
+    "termsOfService": "Nutzungsbedingungen"
+  }
+}

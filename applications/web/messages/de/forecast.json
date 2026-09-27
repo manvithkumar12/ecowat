@@ -1,0 +1,65 @@
+{
+  "Forecast": {
+    "header": {
+      "title": "Prognosezentrum",
+      "description": "KI-gestützte Vorhersagen für Haushaltsenergieverbrauch, Stromkosten und Umweltauswirkungen für die nächsten 7 Tage.",
+      "daysRange": "7-Tage-Bereich",
+      "exportForecast": "Prognose exportieren",
+      "refreshForecast": "Prognose aktualisieren",
+      "exportSuccess": "7-Tage-KI-Prognose erfolgreich als CSV exportiert!"
+    },
+    "kpiCards": {
+      "weeklyConsumption": "Wöchentlicher Verbrauch",
+      "weeklyConsumptionTrend": "-4,2 % erwartet",
+      "predictedWeeklyCost": "Prognostizierte Wochenkosten",
+      "predictedWeeklyCostTrend": "54 € dynamische Ersparnis",
+      "co2Emissions": "CO₂-Emissionen",
+      "co2EmissionsTrend": "84 % Öko-Ausgleich",
+      "modelConfidence": "Modell-Konfidenz",
+      "modelConfidenceTrend": "MAPE-verifiziert"
+    },
+    "kpi": {
+      "confidence": "KI-Konfidenzintervalle dynamisch evaluiert"
+    },
+    "days7": {
+      "title": "7-Tage-Energieverbrauchsprognose",
+      "description": "Machine-Learning-Vorhersage des Energieverbrauchs im Haushalt.",
+      "actualConsumption": "Tatsächlicher Verbrauch",
+      "predictedConsumption": "Prognostizierter Verbrauch",
+      "actualUsage": "Tatsächlicher Verbrauch",
+      "predicted": "Prognostiziert",
+      "HighestPredicted": "Höchste Prognose",
+      "LowestPredicted": "Niedrigste Prognose",
+      "DailyAverage": "Pro Tag",
+      "confidence": "KI-Konfidenzintervalle dynamisch evaluiert",
+      "estimatedNotice": "Geschätzte Verbrauchsdaten. Wir benötigen mindestens 7 Tage Nutzungshistorie vor der Erstellung personalisierter Prognosen.",
+      "estimatedTooltip": "Dies sind geschätzte Verbrauchsdaten, keine KI-generierte Vorhersage. EcoWatt benötigt mindestens 7 Tage Nutzungshistorie, um personalisierte Energieprognosen zu erstellen. Sobald ausreichend Daten vorliegen, wechselt die Anzeige automatisch zu modellgenerierten Prognosen."
+    },
+    "electricity": {
+      "title": "Prognostizierter durchschnittlicher Tagesstrompreis",
+      "description": "Erwartete Strompreisentwicklung basierend auf Machine-Learning-Prognosen.",
+      "price": "Preis",
+      "HighestPrice": "Max. Preis",
+      "LowestPrice": "Min. Preis",
+      "AveragePrice": "Ø Preis"
+    },
+    "carbon": {
+      "title": "Prognostizierte CO₂-Emissionen",
+      "description": "Geschätzte Umweltauswirkungen basierend auf dem prognostizierten Energieverbrauch.",
+      "TotalWeekly": "Wöchentlich gesamt",
+      "HighestEmission": "Max. Emission",
+      "LowestEmission": "Min. Emission",
+      "AverageEmission": "Ø Emission"
+    },
+    "states": {
+      "emptyTitle": "Keine Prognosedaten verfügbar",
+      "emptyDesc": "Generieren Sie Vorhersagen anhand historischer Energieverbrauchsdaten.",
+      "generateForecast": "Prognose generieren",
+      "errorTitle": "Prognose konnte nicht generiert werden",
+      "errorDesc": "Der Prognosedienst ist vorübergehend nicht verfügbar.",
+      "retryForecast": "Prognose wiederholen",
+      "loadingTitle": "KI-Prognosen werden erstellt...",
+      "loadingDesc": "Energieverbrauchsmuster werden analysiert und Vorhersagen vorbereitet."
+    }
+  }
+}

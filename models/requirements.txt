@@ -1,0 +1,21 @@
+# Core ML / Data
+xgboost==3.2.0
+scikit-learn==1.6.1
+numpy==2.0.2
+pandas==2.2.2
+joblib
+
+# API / Web
+fastapi
+uvicorn
+requests
+
+# LangChain
+langchain
+langchain-core
+
+# Search
+google-search-results
+
+# Environment
+python-dotenv

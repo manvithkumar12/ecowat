@@ -1,0 +1,135 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Get a free hosted Postgres database in seconds: `npx create-db`
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model User {
+  id         String   @id @default(uuid())
+  email      String   @unique
+  name       String
+  password   String
+  isVerified Boolean  @default(false)
+  createdAt  DateTime @default(now())
+  limit Int? @default(0)
+  resetAt     DateTime?
+  dailyUsages             DailyUsage[]
+  energyData              UserEnergyData[]
+  usedAppliances          UsedAppliance[]
+  predictedUsages         PredictedUsage[]
+  scheduledApplications scheduledApplication[]
+}
+
+model UserEnergyData {
+  id                 Int         @id @default(autoincrement())
+  houseHold          Int
+  hasSolar           Boolean
+  monthlyConsumption String
+  userAppliances     Appliance[]
+  userId             String      @unique
+  user               User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model Appliance {
+  id         Int     @id @default(autoincrement())
+  name       String
+  power      Int
+  usageHours Int
+  kwh        Int
+  userDataId Int
+  status     Boolean
+
+  energyData              UserEnergyData?          @relation(fields: [userDataId], references: [id], onDelete: Cascade)
+  scheduledApplications scheduledApplication[]
+
+  @@unique([userDataId, name])
+}
+
+model UsedAppliance {
+  id            Int      @id @default(autoincrement())
+  userId        String
+  applianceName String
+  date          DateTime @default(now())
+  kwh           Float
+  rating        Int
+  hoursUsed     Int
+  totalPrice    Float
+  carbonEmission Float?
+  user          User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([date])
+}
+
+model DailyUsage {
+  id     Int      @id @default(autoincrement())
+  userId String
+  date   DateTime
+  usage  Float
+  kwUsed Float
+  user   User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, date])
+}
+
+model PredictedUsage {
+  id             Int      @id @default(autoincrement())
+  userId         String
+  date           String
+  predictedUsage Float
+  createdOn      DateTime @default(now())
+  user           User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, date])
+}
+
+model dailyData {
+  id                Int      @id @default(autoincrement())
+  creationDate      DateTime @default(now())
+  date              String   @unique
+  tempMin           Float
+  tempMax           Float
+  dayOfWeek         Int
+  solar             Float
+  wind              Float
+  renewabilityScore Int
+}
+
+model WeeklyPricePrediction {
+  id            Int      @id @default(autoincrement())
+  date          String   @unique
+  price         Float
+  predictedDate DateTime @default(now())
+}
+
+model scheduledApplication {
+  id            Int       @id @default(autoincrement())
+  applianceId   Int
+  appliance     Appliance @relation(fields: [applianceId], references: [id], onDelete: Cascade)
+  startHour     String
+  endHour       String
+  powerConsumed Float
+  rating        Int
+  date          DateTime  @default(now())
+  userId        String
+  user          User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([applianceId])
+}
+
+model carbonEmission{
+  id Int @id @default(autoincrement())
+  date String 
+  timeStart String
+  timeStop String
+  carbonIntensity Float
+}

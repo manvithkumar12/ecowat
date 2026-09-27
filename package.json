@@ -1,0 +1,7 @@
+{
+    "name": "ecowat",
+    "private": true,
+    "dependencies": {
+        "@tanstack/react-query": "^5.100.14"
+    }
+}

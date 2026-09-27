@@ -1,0 +1,97 @@
+{
+  "Navbar": {
+    "dashboard": "Dashboard",
+    "forecast": "Forecast",
+    "analytics": "Analytics",
+    "recommendations": "Recommendations",
+    "language": "Language / Sprache",
+    "english": "English (EN)",
+    "german": "Deutsch (DE)",
+    "Notifications": "Notifications",
+    "Theme": "Change Theme",
+    "login": "Log In / Sign Up",
+    "schedule": "Schedule",
+    "tracker":"Tracker",
+    "appliances":"Appliances"
+  },
+  "profile": {
+    "profile": "Profile",
+    "Logout": "Logout",
+    "settings": "Settings"
+  },
+  "Hero": {
+    "badge": "Smart Energy Forecasting",
+    "title": "Predict Energy Usage. Reduce Costs. Power a Greener Future.",
+    "description": "AI-powered household energy forecasting and appliance scheduling designed to help families optimize electricity usage and align consumption with renewable energy availability.",
+    "getStarted": "Get Started",
+    "learnMore": "Learn More"
+  },
+  "Optimized": {
+    "badge": "Optimized Intelligence",
+    "title": "Built for Modern Energy Grids",
+    "description": "EcoWatt compiles dynamic parameters to help households shift utility loads with complete confidence.",
+    "feature1Title": "Energy Forecasting",
+    "feature1Desc": "Predict future household energy consumption patterns using advanced regional load forecasting models.",
+    "feature2Title": "Renewable Energy Insights",
+    "feature2Desc": "Understand renewable energy availability windows based on local solar and wind production streams.",
+    "feature3Title": "Cost Optimization",
+    "feature3Desc": "Identify better times for energy-intensive activities to align with low-demand grid windows.",
+    "feature4Title": "Smart Recommendations",
+    "feature4Desc": "Receive personalized appliance scheduling suggestions optimized to balance comfort and grid capacity."
+  },
+  "Work": {
+    "badge": "Seamless Setup",
+    "title": "How It Works",
+    "description": "Deploy intelligent balancing across your home automation systems in three simple blocks.",
+    "step1Title": "Collect Consumption Data",
+    "step1Desc": "Connect to dynamic smart meters or standard residential monitoring systems.",
+    "step2Title": "Generate Forecasts",
+    "step2Desc": "EcoWatt processes local grid production patterns and environmental factors dynamically.",
+    "step3Title": "Optimize Usage",
+    "step3Desc": "Receive clear schedules designed to align heavy appliance loads automatically."
+  },
+  "Benefits": {
+    "badge": "Key Benefits",
+    "title": "Why Choose EcoWatt",
+    "description": "Engineered to support sustainable consumption without compromising home comfort.",
+    "benefit1Title": "Reduce Energy Costs",
+    "benefit1Desc": "Understand optimal windows to operate heating and cooling systems to align with lower tariff profiles.",
+    "benefit2Title": "Improve Renewable Usage",
+    "benefit2Desc": "Increase utilization of carbon-free resources by scheduling high-draw appliances during local solar and wind surpluses.",
+    "benefit3Title": "Track Environmental Impact",
+    "benefit3Desc": "Gain granular visibility into home footprint metrics and follow optimized targets over dynamic grid periods.",
+    "benefit4Title": "Make Smarter Decisions",
+    "benefit4Desc": "Utilize reliable rolling prediction models to schedule energy-heavy home tasks ahead of time."
+  },
+  "CTA": {
+    "title": "Ready to optimize your household energy consumption?",
+    "description": "Start making smarter energy decisions with AI-powered forecasting and recommendations today.",
+    "getStarted": "Get Started",
+    "contactUs": "Contact Us"
+  },
+  "Footer": {
+    "description": "AI-powered energy forecasting and intelligent appliance scheduling for smarter, greener households.",
+    "product": "Product",
+    "resources": "Resources",
+    "company": "Company",
+    "stayUpdated": "Stay Updated",
+    "newsletterDesc": "Receive product updates and energy insights.",
+    "copyright": "EcoWatt. All rights reserved.",
+    "builtWith": "Built with Next.js & AI Forecasting",
+    "features": "Features",
+    "forecasting": "Forecasting",
+    "analytics": "Analytics",
+    "smartRecommendations": "Smart Recommendations",
+    "applianceScheduling": "Appliance Scheduling",
+    "documentation": "Documentation",
+    "apiReference": "API Reference",
+    "blog": "Blog",
+    "helpCenter": "Help Center",
+    "faq": "FAQ",
+    "about": "About",
+    "contact": "Contact",
+    "careers": "Careers",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service"
+  }
+}

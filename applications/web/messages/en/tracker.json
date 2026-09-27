@@ -1,0 +1,77 @@
+{
+  "Tracker": {
+    "header": {
+      "title": "Consumption Tracker",
+      "description": "Record, monitor, and audit daily appliance energy logs and dynamic grid pricing.",
+      "addApplianceLog": "Add Appliance Log",
+      "auditPeriod": "Audit Period:",
+      "selectDate": "Select Date",
+      "usedApplianceList": "Used Appliance List ({date})",
+      "pleaseLogIn": "Please log in to track consumption."
+    },
+    "stats": {
+      "todayCost": "Today's Cost",
+      "dayCost": "{date} Cost",
+      "dayCostSubtitle": "For logged usages on this day",
+      "past30DaysCost": "Past 30 Days Cost",
+      "past30DaysCostSubtitle": "Accumulated cost over past 30 days",
+      "past30DaysSavings": "Savings (Past 30 Days)",
+      "past30DaysSavingsSubtitle": "Compared to standard €0.35 rate",
+      "totalLoggedAppliances": "Total Logged Appliances",
+      "totalLoggedAppliancesSubtitle": "Used units on selected day"
+    },
+    "card": {
+      "loggedUsage": "Logged usage",
+      "rating": "Rating",
+      "duration": "Duration",
+      "calculated": "Calculated",
+      "totalPrice": "Total Price"
+    },
+    "livePrice": {
+      "title": "Current Grid Price",
+      "liveRate": "Live Rate",
+      "description": "Dynamically retrieved utility grid electricity cost rates.",
+      "gridSubject": "Prices subject to live grid utility",
+      "engine": "EcoWatt Engine"
+    },
+    "empty": {
+      "title": "No used appliances logged",
+      "description": "No consumption data recorded for {date}. Click the \"Add Appliance Log\" button to record runtime logs."
+    },
+    "addModal": {
+      "title": "Add Logged Appliance",
+      "description": "Log appliance runtime logs to record daily consumption patterns",
+      "applianceName": "Appliance Name",
+      "selectPlaceholder": "Select appliance type",
+      "rating": "Rating (Watts)",
+      "ratingPlaceholder": "e.g. 1500",
+      "operatingPeriod": "Operating Period",
+      "to": "to",
+      "startPlaceholder": "Start Time",
+      "endPlaceholder": "End Time",
+      "duration": "Duration",
+      "usage": "Usage",
+      "estCost": "Est. Cost",
+      "cancel": "Cancel",
+      "logging": "Logging...",
+      "addBtn": "Add to Tracker",
+      "fillAll": "Please fill in all fields.",
+      "successToast": "Appliance consumption added successfully!",
+      "errorToast": "Something went wrong."
+    },
+    "editModal": {
+      "title": "Edit Appliance Log",
+      "description": "Modify the rating parameters or runtime logging duration for this audit record.",
+      "applianceName": "Appliance Name",
+      "rating": "Rating (Watts)",
+      "operatingPeriod": "Operating Period",
+      "to": "to",
+      "duration": "Duration",
+      "estConsumption": "Est. Consumption",
+      "estCost": "Est. Cost",
+      "cancel": "Cancel",
+      "updating": "Updating...",
+      "saveChanges": "Save Changes"
+    }
+  }
+}

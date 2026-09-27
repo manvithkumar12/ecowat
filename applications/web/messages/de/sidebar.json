@@ -1,0 +1,16 @@
+{
+  "Sidebar": {
+    "dashboard": "Dashboard",
+    "forecast": "Prognose",
+    "appliances": "Geräte",
+    "recommendations": "Empfehlungen",
+    "schedule": "Zeitplaner",
+    "tracker": "Tracker",
+    "footprint": "CO₂-Fußabdruck",
+    "priceHistory": "Preisentwicklung",
+    "ecky": "Ecky",
+    "docs": "Dokumentation",
+    "assistantTitle": "EcoAssistant",
+    "assistantSubtitle": "Netzoptimiert"
+  }
+}

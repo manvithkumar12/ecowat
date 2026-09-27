@@ -1,0 +1,187 @@
+{
+  "Dashboard": {
+    "header": {
+      "title": "Energie-Intelligence-Dashboard",
+      "aiForecastsActive": "KI-Prognosen aktiv",
+      "description": "Überwachen Sie Strompreise, Verfügbarkeit erneuerbarer Energien, Verbrauchsmuster und zukünftige Energieprognosen.",
+      "exportReport": "Bericht exportieren",
+      "exporting": "Wird exportiert...",
+      "exportFailed": "Export des Berichts fehlgeschlagen"
+    },
+    "priceCard": {
+      "currentPrice": "Aktueller Preis",
+      "vsAverage": "vs. Tagesdurchschnitt",
+      "viewHourlyData": "Stundendaten anzeigen"
+    },
+    "renewableCard": {
+      "title": "Erneuerbares Potenzial",
+      "availability": "Verfügbarkeit erneuerbarer Energien",
+      "viewBestHours": "Beste Stunden anzeigen",
+      "noData": "Keine Daten zum erneuerbaren Potenzial verfügbar",
+      "retry": "Wiederholen"
+    },
+    "consumptionCard": {
+      "title": "Heutiger Verbrauch",
+      "vsYesterday": "vs. gestriger Verbrauch",
+      "viewBreakdown": "Verbrauchsaufschlüsselung anzeigen",
+      "new": "Neu"
+    },
+    "weeklyCard": {
+      "title": "Geschätzte wöchentliche Kosten",
+      "subtitle": "Prognostizierte Ausgaben im Budget",
+      "viewDailyCost": "Tageskosten anzeigen"
+    },
+    "insights": {
+      "title": "Intelligente Empfehlungen",
+      "basedOn": "Basierend auf Ihren",
+      "savedAppliances": "gespeicherten Geräten",
+      "subtitle": "Echtzeit-Empfehlungen zur Maximierung der Effizienz",
+      "activePlans": "Aktive Sparpläne",
+      "save": "Sparen",
+      "penalty": "Mehrkosten",
+      "run": "Betreiben Sie",
+      "between": "zwischen",
+      "dontRun": "Vermeiden Sie",
+      "during": "während"
+    },
+    "consumptionForecast": {
+      "title": "Verbrauchsprognose",
+      "subtitle": "Prognostizierter Haushaltsenergieverbrauch für die nächsten 7 Tage",
+      "actual": "Tatsächlich",
+      "predicted": "Prognostiziert",
+      "loading": "Prognose wird geladen...",
+      "failed": "Laden der Prognosedaten fehlgeschlagen.",
+      "retry": "Wiederholen",
+      "estimatedNotice": "Geschätzte Verbrauchsdaten. Wir benötigen mindestens 7 Tage Nutzungshistorie vor der Erstellung personalisierter Prognosen.",
+      "estimatedTooltip": "Dies sind geschätzte Verbrauchsdaten, keine KI-generierte Vorhersage. EcoWatt benötigt mindestens 7 Tage Nutzungshistorie, um personalisierte Energieprognosen zu erstellen. Sobald ausreichend Daten vorliegen, wechselt die Anzeige automatisch zu modellgenerierten Prognosen."
+    },
+    "priceForecast": {
+      "title": "Preisprognose",
+      "subtitle": "Erwartete Strompreisänderungen",
+      "noDataTitle": "Keine Preisdaten verfügbar",
+      "noDataDesc": "Prognosedaten erscheinen hier, sobald Vorhersagen generiert wurden.",
+      "failedTitle": "Laden der Prognose fehlgeschlagen",
+      "failedDesc": "Aktuelle Preisdaten konnten nicht abgerufen werden. Bitte versuchen Sie es erneut.",
+      "retry": "Wiederholen"
+    },
+    "renewableForecast": {
+      "title": "Prognose erneuerbare Energien",
+      "subtitle": "Erwarteter Solar- und Windanteil der nächsten 7 Tage",
+      "solar": "Solar",
+      "wind": "Wind",
+      "loading": "Prognose für erneuerbare Energien wird geladen...",
+      "failed": "Laden der Prognose für erneuerbare Energien fehlgeschlagen",
+      "tryAgain": "Bitte versuchen Sie es später erneut.",
+      "retry": "Wiederholen"
+    },
+    "applianceBreakdown": {
+      "title": "Geräteaufschlüsselung",
+      "subtitle": "Geschätzter Energieverbrauch und Kosten nach Gerät",
+      "total": "Gesamt",
+      "applianceName": "Gerätename",
+      "energyUsage": "Energieverbrauch",
+      "cost": "Kosten",
+      "totalConsumptionToday": "Gesamtverbrauch heute",
+      "totalCostToday": "Gesamtkosten heute",
+      "currentPrice": "Aktueller Strompreis"
+    },
+    "popups": {
+      "hourlyPrice": {
+        "title": "Stündliche Preisaufschlüsselung",
+        "subtitle": "Heutige Stromtarife nach Stunde",
+        "timeWindow": "Zeitfenster",
+        "price": "Preis",
+        "status": "Status",
+        "current": "Aktuell",
+        "cheap": "Günstig",
+        "peak": "Spitze",
+        "normal": "Normal",
+        "average": "Durchschnitt (Nächste 24h):",
+        "source": "Quelle: aWATTar (EPEX Spot Market)",
+        "close": "Schließen"
+      },
+      "consumptionDetails": {
+        "title": "Aktuelle Verbrauchsaufschlüsselung",
+        "subtitle": "Top 3 der zuletzt genutzten Geräte mit Leistung, Nutzungsdauer und Verbrauch",
+        "application": "Gerät",
+        "rating": "Leistung (W)",
+        "noApplicationsFound": "Keine Anwendungen gefunden",
+        "noAppliancesInfo": "Noch keine Daten zur Gerätenutzung vorhanden. Füge Geräte hinzu und nutze sie, um hier Verbrauchsanalysen zu sehen.",
+        "usage": "Nutzung (Std.)",
+        "consumption": "Verbrauch",
+        "totalConsumption": "Gesamtverbrauch:",
+        "totalUsage": "Gesamtnutzung:",
+        "acrossApps": "Std. über die letzten 3 Geräte",
+        "gotIt": "Verstanden",
+        "close": "Schließen"
+      },
+      "weeklyCostDetails": {
+        "title": "Tägliche Kostenaufschlüsselung",
+        "subtitle": "Geschätzte Ausgaben von Montag bis Sonntag",
+        "day": "Tag",
+        "cost": "Kosten",
+        "status": "Status",
+        "estimated": "Geschätzt",
+        "monday": "Montag",
+        "tuesday": "Dienstag",
+        "wednesday": "Mittwoch",
+        "thursday": "Donnerstag",
+        "friday": "Freitag",
+        "saturday": "Samstag",
+        "sunday": "Sonntag",
+        "recorded": "Erfasst",
+        "weeklyTotal": "Wöchentliche Gesamtsumme:",
+        "averageDailyCost": "Durchschnittliche Tageskosten:",
+        "close": "Schließen"
+      },
+      "renewableDetails": {
+        "title": "Erneuerbare Einblicke",
+        "live": "Live",
+        "germanyTime": "Deutsche Zeit",
+        "ecoPotential": "Öko-Potenzial",
+        "status": "Status",
+        "solarGeneration": "Solarerzeugung",
+        "solarFactor": "Durchschnittlicher Solarfaktor heute",
+        "windGeneration": "Winderzeugung",
+        "windFactor": "Durchschnittlicher Windfaktor",
+        "peakWindows": "Beste Ökostrom-Zeitfenster",
+        "timelineTitle": "24-Stunden-Ökostrom-Verlauf",
+        "timelineSubtitle": "Prognose des Öko-Potenzial-Index über den heutigen Tag",
+        "ecoIndex": "Öko-Index",
+        "actionsTitle": "Empfohlene Netzeffizienz-Maßnahmen",
+        "shiftApplianceTitle": "Große Verbraucher zeitlich verlagern",
+        "shiftApplianceDesc": "Starten Sie Waschmaschinen, Geschirrspüler und Poolpumpen in Zeiten mit hohem Grünstrom-Index zur Optimierung Ihrer Bilanz.",
+        "coordinateChargingTitle": "Ladevorgänge abstimmen",
+        "coordinateChargingDesc": "Nutzen Sie bei hoher Solarverfügbarkeit E-Auto-Ladestationen für direkten Eigenverbrauch aus sauberer Erzeugung.",
+        "currentPeakStatus": "Aktueller Spitzenstatus",
+        "scoreLabel": "Score",
+        "gridLabel": "Netz",
+        "close": "Schließen"
+      },
+      "insightPopup": {
+        "optimizationInsights": "Optimierungs-Einblicke",
+        "benefitsRec": "Vorteile der Nutzung in diesem Zeitfenster",
+        "benefitsAvoid": "Vorteile der Vermeidung dieses Zeitfensters",
+        "timeSlot": "Zeitfenster:",
+        "financialSavings": "Finanzielle Ersparnis",
+        "avoidedPenalty": "Vermeidbare Mehrkosten",
+        "renewableShare": "Erneuerbarer Anteil",
+        "clean": "Sauber",
+        "electricityPrice": "Strompreis",
+        "riskScore": "Risiko-Score",
+        "free": "Kostenlos",
+        "risk": "Risiko",
+        "ecoEfficiency": "Öko-Effizienz",
+        "gridLoadState": "Netzlastzustand",
+        "score": "Score",
+        "highLoadPeak": "Hohe Lastspitze",
+        "whyTitle": "Warum diese Empfehlung?",
+        "gotIt": "Verstanden, danke!"
+      },
+      "statError": {
+        "message": "Daten konnten leider nicht abgerufen werden",
+        "retry": "Wiederholen"
+      }
+    }
+  }
+}

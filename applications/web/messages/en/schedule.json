@@ -1,0 +1,75 @@
+{
+  "Schedule": {
+    "header": {
+      "title": "Today's Appliance Schedule",
+      "timezoneActive": "German Timezone Active",
+      "description": "Manage scheduled run cycles for your household appliances relative to grid pricing and renewable windows.",
+      "berlinLocalTime": "Berlin local time",
+      "loading": "Loading...",
+      "addAppliance": "Add Appliance"
+    },
+    "sections": {
+      "upcoming": "Upcoming",
+      "pending": "Pending",
+      "completed": "Completed"
+    },
+    "card": {
+      "usageTime": "Usage Time",
+      "duration": "Duration",
+      "power": "Power",
+      "rating": "Rating",
+      "cost": "Cost",
+      "startRun": "Start Run",
+      "reschedule": "Reschedule",
+      "markAsUsed": "Mark as Used",
+      "remove": "Remove",
+      "runCompleted": "Run Completed",
+      "applianceFallback": "Appliance",
+      "generalCategory": "General"
+    },
+    "empty": {
+      "noUpcomingTitle": "No upcoming schedules",
+      "noUpcomingDesc": "No upcoming tasks remaining. Try generating a new optimized schedule.",
+      "noPendingTitle": "No pending schedules",
+      "noPendingDesc": "All past time-window schedules have been marked as run or completed. Good job!",
+      "noCompletedTitle": "No completed schedules",
+      "noCompletedDesc": "Schedules marked as run during today's time intervals will appear here.",
+      "generateAiSchedule": "Generate AI Schedule"
+    },
+    "addDialog": {
+      "title": "Add Schedule Appliance",
+      "description": "Create a manual appliance schedule item for today.",
+      "applianceName": "Appliance Name",
+      "savedAppliances": "Saved Appliances",
+      "selectPlaceholder": "Select appliance type",
+      "power": "Power (Watts)",
+      "powerPlaceholder": "e.g. 1500",
+      "operatingPeriod": "Operating Period (24h Format)",
+      "to": "to",
+      "duration": "Duration",
+      "usage": "Usage",
+      "estCost": "Est. Cost",
+      "cancel": "Cancel",
+      "addToSchedule": "Add to Schedule",
+      "validationFillAll": "Please fill in all fields.",
+      "validationInvalidTime": "Please enter a valid 24-hour time (e.g. 14:30).",
+      "validationFutureTime": "Start time must be in the future after {time}.",
+      "validationEndTimeAfterStart": "End time must be after the start time.",
+      "toastAdded": "{name} schedule added successfully!"
+    },
+    "errors": {
+      "failedTitle": "Failed to load schedule data",
+      "fetchSchedules": "Could not fetch your schedules. ",
+      "loadAppliances": "Could not load appliances. ",
+      "loadRecs": "Could not load recommendations. ",
+      "retrySuffix": "Please try again.",
+      "retry": "Retry"
+    },
+    "toasts": {
+      "markCompleted": "Appliance run marked as Completed!",
+      "removed": "Schedule removed.",
+      "generatedSuccess": "Schedule generated successfully!",
+      "generatedFail": "Failed to generate schedule."
+    }
+  }
+}
