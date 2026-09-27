@@ -22,9 +22,47 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "EcoWatt — Smart Energy Forecasting",
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
+  ),
+  title: {
+    default: "EcoWatt - Smart Energy Forecasting",
+    template: "%s | EcoWatt",
+  },
   description:
     "AI-powered household energy forecasting and appliance scheduling. Predict usage, reduce costs, and align with renewable energy availability.",
+  applicationName: "EcoWatt",
+  keywords: [
+    "energy forecasting",
+    "household energy management",
+    "smart appliance scheduling",
+    "renewable energy",
+    "electricity costs",
+  ],
+  authors: [{ name: "EcoWatt" }],
+  creator: "EcoWatt",
+  publisher: "EcoWatt",
+  alternates: {
+    languages: {
+      en: "/en",
+      de: "/de",
+    },
+  },
+  openGraph: {
+    type: "website",
+    siteName: "EcoWatt",
+    title: "EcoWatt - Smart Energy Forecasting",
+    description:
+      "Forecast household energy usage, optimize appliance schedules, reduce costs, and use more renewable energy.",
+    images: [{ url: "/dark_logo.png", alt: "EcoWatt" }],
+  },
+  twitter: {
+    card: "summary",
+    title: "EcoWatt - Smart Energy Forecasting",
+    description:
+      "Forecast household energy usage and optimize appliance schedules with EcoWatt.",
+    images: ["/dark_logo.png"],
+  },
 };
 export default async function RootLayout({
   children,

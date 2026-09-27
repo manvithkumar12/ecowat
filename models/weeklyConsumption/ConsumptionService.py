@@ -1,10 +1,14 @@
+import os
 from data.Features import FEATURES
 import joblib
 import pandas as pd
 
-weeklyConsumptionModel = joblib.load(
-    "./weeklyConsumption/weekConsumption.pkl"
+MODEL_PATH = os.path.join(
+    os.path.dirname(__file__),
+    "weekConsumption.pkl"
 )
+
+weeklyConsumptionModel = joblib.load(MODEL_PATH)
 def predict(data: dict):    
     rows = []
 

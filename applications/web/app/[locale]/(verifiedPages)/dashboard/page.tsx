@@ -2,7 +2,7 @@ import DashboardClient from "@/src/components/Dashboard/DashboardSection";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Energy Intelligence Dashboard | EcoWatt",
+  title: "Energy Intelligence Dashboard",
   description:
     "Predictive household energy forecasting, smart schedule optimization, electricity cost analysis, and renewable grid integration.",
 };

@@ -1,12 +1,16 @@
+import os
 import joblib
 import pandas as pd
 
 FEATURES = ["temperatureMax","temperatureMin","dayOfWeek",
 "month","isWeekend","lag1","lag7","rolling7",]
 
-pricePrediction = joblib.load(
-    "./weeklyPricePrediction/pricePrediction.pkl"
+MODEL_PATH = os.path.join(
+    os.path.dirname(__file__),
+    "pricePrediction.pkl"
 )
+
+pricePrediction = joblib.load(MODEL_PATH)
 
 def predictPrice(data: dict):
     history_df = pd.DataFrame(data["days30Price"])

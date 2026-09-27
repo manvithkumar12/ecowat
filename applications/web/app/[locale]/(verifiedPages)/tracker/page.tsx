@@ -4,7 +4,7 @@ import { LivePriceProvider } from "@/src/context/usePriceData";
 import { UsedApplianceProvider } from "@/src/context/usedAppliance.context";
 
 export const metadata: Metadata = {
-  title: "Consumption Tracker | EcoWatt",
+  title: "Consumption Tracker",
   description: "Track daily used appliances, consumption, and costs",
 };
 
