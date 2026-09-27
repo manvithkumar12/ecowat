@@ -11,7 +11,7 @@ export default function CallbackPage() {
 
   const openAppOrDashboard = () => {
     const fallback = setTimeout(() => {
-      router.push(`/${locale}/dashboard`);
+      router.push(`/${locale}/profile`);
     }, 1500);
 
     window.location.href = "ecowat://verified";
