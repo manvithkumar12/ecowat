@@ -1,7 +1,7 @@
 {
   "name": "ecowat",
   "private": true,
-  "packageManager": "pnpm@11.4.0",
+  "packageManager": "pnpm@10.17.1",
   "dependencies": {
     "@tanstack/react-query": "^5.100.14"
   }
