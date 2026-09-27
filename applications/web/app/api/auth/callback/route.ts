@@ -39,6 +39,13 @@ export async function POST(req: Request) {
       where: {
         email: user.email,
       },
+      include: {
+        energyData: {
+          select: {
+            id: true,
+          },
+        },
+      },
     });
 
     if (!prismaUser) {
@@ -49,6 +56,7 @@ export async function POST(req: Request) {
       id: prismaUser.id,
       email: prismaUser.email,
       name: prismaUser.name,
+      hasEnergyId: Boolean(prismaUser.energyData),
     });
     const response = NextResponse.json(
       {

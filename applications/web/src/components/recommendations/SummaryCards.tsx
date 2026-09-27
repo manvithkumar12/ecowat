@@ -1,6 +1,6 @@
 import React from "react";
 import type { LucideIcon } from "lucide-react";
-import { Card } from "shadcn/ui/card";
+import { Card } from "@/shadcn/ui/card";
 
 type SummaryItem = {
   title: string;

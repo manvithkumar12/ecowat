@@ -20,7 +20,8 @@ export const isloggedin = (
       return NextResponse.json({ message: "LOGIN_FIRST" }, { status: 401 });
     }
 
-    const bypassSecret = process.env.INTERNAL_BYPASS_KEY || "ecowat_internal_secret_key_123!";
+    const bypassSecret =
+      process.env.INTERNAL_BYPASS_KEY || "ecowat_internal_secret_key_123!";
     const bypassPrefix = `bypass_${bypassSecret}_`;
 
     if (token.startsWith(bypassPrefix)) {
@@ -29,6 +30,7 @@ export const isloggedin = (
         id: userId,
         email: "internal@ecowat.local",
         name: "Internal Python Service",
+        hasEnergyId: false,
       };
       return handler(req, mockUser);
     }

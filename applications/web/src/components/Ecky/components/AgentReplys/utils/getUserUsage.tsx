@@ -9,5 +9,5 @@ export const useUserUsage = (date?: string) => {
   const today = getGermanDate(Date.now());
   const selectedDate = date ?? today;
 
-  return useUsedAppliance(userId ?? "", undefined, selectedDate);
+  return useUsedAppliance(undefined, selectedDate);
 };

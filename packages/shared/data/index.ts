@@ -16,6 +16,5 @@ export * from "./footPrints/kpiCards";
 export * from "./footPrints/weeklyData";
 export * from "./principles.data";
 export * from "./technologyData";
-export * from "./Appliances/appliancesPie.data";
 export * from "./docs.data";
 export * from "./docs.types";
