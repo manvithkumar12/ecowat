@@ -1,7 +1,13 @@
 import { createClient } from "redis";
 
+const redisUrl = process.env.REDIS_URL;
+
+if (!redisUrl) {
+  throw new Error("REDIS_URL is not configured in the environment");
+}
+
 export const redis = createClient({
-  url: process.env.REDIS_URL,
+  url: redisUrl,
 });
 
 redis.on("error", (err) => {
