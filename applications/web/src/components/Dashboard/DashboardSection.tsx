@@ -19,6 +19,7 @@ import { WeeklyConsumptionProvider } from "@/src/context/useWeekConsumption";
 import { WeeklyPriceProvider as WeeklyCardPriceProvider } from "@/src/context/userWeeklyContext";
 import { WeeklyPriceProvider as ElectricityForecastPriceProvider } from "@/src/context/useWeeklyUserPrice";
 import { RenewableDataProvider } from "@/src/context/useRenewableData";
+import ServerWakeupNotice from "@/src/components/Dashboard/CardComponents/dashboard/Popups/ServerWakeupNotice";
 
 export default function DashboardSection() {
   return (
@@ -28,6 +29,7 @@ export default function DashboardSection() {
           <UsedApplianceProvider>
             <RecommendationsProvider>
               <DashboardProvider>
+                <ServerWakeupNotice />
                 <main className="flex-1 p-4 sm:p-6 lg:p-8 space-y-8 select-text">
                   <Dashboardheader />
                   <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-5">
