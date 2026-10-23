@@ -190,6 +190,13 @@
       "tip": "Sobald der Server aktiv ist, werden alle Daten und KI-Vorhersagen reibungslos geladen.",
       "gotIt": "Verstanden",
       "close": "Schließen"
+    },
+    "eckyNotice": {
+      "title": "Entschuldigung, dieser Dienst ist derzeit nicht verfügbar.",
+      "message": "Für die Ausführung des LLM ist eine GPU erforderlich, die bei kostenlosen Hosting-Diensten zum Testen nicht verfügbar ist. Um das LLM zu testen, besuchen Sie bitte",
+      "colabLink": "Google Colab",
+      "demoMessage": "Sie können sich auch das",
+      "demoLink": "Demovideo"
     }
   }
 }
