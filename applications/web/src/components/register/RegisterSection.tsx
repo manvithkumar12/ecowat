@@ -1,8 +1,11 @@
-import Link from "next/link";
+import { Link } from "@/src/i18n/routing";
 import LanguageSwitcher from "@/src/components/Navbar/client/LanguageSwitcher";
 import RegisterForm from "@/src/components/register/client/RegisterForm";
+import { useTranslations } from "next-intl";
 
 export default function RegisterSection() {
+  const t = useTranslations("Auth.register");
+
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-[#0a0a0a] flex flex-col items-center justify-center px-4">
       {/* Card */}
@@ -15,10 +18,10 @@ export default function RegisterSection() {
         {/* Heading */}
         <div className="mb-7">
           <h1 className="text-2xl font-bold tracking-tight text-slate-900 dark:text-white">
-            Create account
+            {t("title")}
           </h1>
           <p className="mt-1.5 text-sm text-slate-500 dark:text-slate-400">
-            Start your free EcoWatt journey today.
+            {t("subtitle")}
           </p>
         </div>
 
@@ -27,12 +30,12 @@ export default function RegisterSection() {
 
         {/* Sign in link */}
         <p className="text-center text-xs text-slate-500 dark:text-slate-400">
-          Already have an account?{" "}
+          {t("alreadyHaveAccount")}{" "}
           <Link
             href="/login"
             className="font-semibold text-emerald-500 hover:text-emerald-600 transition-colors"
           >
-            Sign in
+            {t("signIn")}
           </Link>
         </p>
       </div>
