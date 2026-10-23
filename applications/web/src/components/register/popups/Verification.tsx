@@ -2,6 +2,7 @@
 
 import { X, Mail } from "lucide-react";
 import { useEffect } from "react";
+import { useTranslations } from "next-intl";
 
 interface VerificationProps {
   email: string;
@@ -10,6 +11,8 @@ interface VerificationProps {
 }
 
 const Verification = ({ email, open, onClose }: VerificationProps) => {
+  const t = useTranslations("Auth.verification");
+
   const handleClose = () => {
     onClose();
   };
@@ -71,11 +74,11 @@ const Verification = ({ email, open, onClose }: VerificationProps) => {
             {/* Content */}
             <div>
               <h2 className="text-xl font-bold tracking-tight text-slate-900 dark:text-white">
-                Verification Email Sent
+                {t("title")}
               </h2>
 
               <p className="mt-3 text-sm text-slate-500 dark:text-slate-400 leading-6">
-                We've sent a verification link to
+                {t("sentDesc")}
               </p>
 
               <p className="mt-2 text-sm font-semibold text-slate-800 dark:text-slate-200 break-all">
@@ -83,13 +86,11 @@ const Verification = ({ email, open, onClose }: VerificationProps) => {
               </p>
 
               <p className="mt-4 text-sm text-slate-500 dark:text-slate-400 leading-6">
-                Open your inbox and click the verification link to activate your
-                EcoWatt account.
+                {t("instruction")}
               </p>
 
               <p className="mt-2 text-xs text-slate-400 dark:text-slate-500">
-                After verification you'll be signed in automatically and
-                redirected to your dashboard.
+                {t("afterNote")}
               </p>
             </div>
 
@@ -100,7 +101,7 @@ const Verification = ({ email, open, onClose }: VerificationProps) => {
                 onClick={openGmail}
                 className="w-full h-11 rounded-lg bg-emerald-500 hover:bg-emerald-600 active:bg-emerald-700 text-white text-sm font-semibold shadow-sm shadow-emerald-500/20 transition-all cursor-pointer"
               >
-                Open Gmail
+                {t("openGmail")}
               </button>
             </div>
           </div>
