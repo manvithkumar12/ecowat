@@ -182,6 +182,14 @@
         "message": "Sorry, unable to fetch data",
         "retry": "Retry"
       }
+    },
+    "serverNotice": {
+      "badge": "Server Notice",
+      "title": "Backend Activation Notice",
+      "message": "The backend is currently hosted on a free server, so it takes a few minutes to activate. If you have logged in recently and see an \"unable to fetch\" error, please try again in 2–3 minutes.",
+      "tip": "Once the server is active, all energy metrics and AI forecasts will load smoothly.",
+      "gotIt": "Got it",
+      "close": "Close"
     }
   }
 }
