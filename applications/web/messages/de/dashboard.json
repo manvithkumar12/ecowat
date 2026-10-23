@@ -182,6 +182,14 @@
         "message": "Daten konnten leider nicht abgerufen werden",
         "retry": "Wiederholen"
       }
+    },
+    "serverNotice": {
+      "badge": "Server-Hinweis",
+      "title": "Hinweis zur Backend-Aktivierung",
+      "message": "Das Backend wird derzeit auf einem kostenlosen Server gehostet, daher kann die Aktivierung einige Minuten dauern. Wenn Sie sich kürzlich angemeldet haben und ein Fehler beim Abrufen angezeigt wird, versuchen Sie es bitte in 2–3 Minuten erneut.",
+      "tip": "Sobald der Server aktiv ist, werden alle Daten und KI-Vorhersagen reibungslos geladen.",
+      "gotIt": "Verstanden",
+      "close": "Schließen"
     }
   }
 }
