@@ -190,6 +190,13 @@
       "tip": "Once the server is active, all energy metrics and AI forecasts will load smoothly.",
       "gotIt": "Got it",
       "close": "Close"
+    },
+    "eckyNotice": {
+      "title": "Sorry, this service is currently unavailable.",
+      "message": "Running the LLM requires a GPU, which is not available on free hosting services for testing. To test the LLM, please visit",
+      "colabLink": "Google Colab",
+      "demoMessage": "You can also watch the",
+      "demoLink": "demo video"
     }
   }
 }
