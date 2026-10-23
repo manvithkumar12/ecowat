@@ -1,18 +1,14 @@
 "use client";
 import { X, CheckCircle2 } from "lucide-react";
 import { useState, useEffect } from "react";
+import { useTranslations } from "next-intl";
 import StepIndicator from "./StepIndicator";
 import StepEmail from "./StepEmail";
 import StepOtp from "./StepOtp";
 import StepPassword from "./StepPassword";
 
-const STEP_SUBTITLES = [
-  "We'll send a 6-digit code to your email.",
-  "", // filled dynamically
-  "Create a strong new password.",
-];
-
 const ForgotPass = () => {
+  const t = useTranslations("Auth.forgotPassword");
   const [open, setOpen] = useState(false);
   const [step, setStep] = useState(0);
   const [email, setEmail] = useState("");
@@ -52,8 +48,13 @@ const ForgotPass = () => {
     return () => window.removeEventListener("keydown", handler);
   }, [open]);
 
-  const subtitle =
-    step === 1 ? `Enter the code sent to ${email}` : STEP_SUBTITLES[step];
+  const stepSubtitles = [
+    t("step0Subtitle"),
+    `${t("step1Subtitle")} ${email}`,
+    t("step2Subtitle"),
+  ];
+
+  const subtitle = stepSubtitles[step];
 
   return (
     <>
@@ -63,7 +64,7 @@ const ForgotPass = () => {
         onClick={() => setOpen(true)}
         className="text-xs font-semibold text-emerald-500 hover:text-emerald-600 transition-colors cursor-pointer bg-transparent border-none p-0"
       >
-        Forgot password?
+        {t("trigger")}
       </button>
 
       {/* Overlay */}
