@@ -5,7 +5,10 @@ import { validatePassword } from "@/src/components/login/utils/validatePassword"
 import { toast } from "sonner";
 import Verification from "@/src/components/register/popups/Verification";
 import { registerApi } from "@ecowat/shared";
+import { useTranslations } from "next-intl";
+
 const RegisterForm = () => {
+  const t = useTranslations("Auth.register");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -25,6 +28,13 @@ const RegisterForm = () => {
     email.trim().length > 0 &&
     passValid &&
     passwordsMatch;
+
+  const getPasswordRuleTranslation = (rule: string) => {
+    if (rule.includes("6 characters")) return t("rules.minChars");
+    if (rule.includes("uppercase")) return t("rules.uppercase");
+    if (rule.includes("special character")) return t("rules.specialChar");
+    return rule;
+  };
 
   const handlePassChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setPassword(e.target.value);
@@ -60,12 +70,12 @@ const RegisterForm = () => {
             htmlFor="reg-name"
             className="text-xs font-semibold text-slate-600 dark:text-slate-300"
           >
-            Full name
+            {t("nameLabel")}
           </label>
           <input
             id="reg-name"
             type="text"
-            placeholder="John Smith"
+            placeholder={t("namePlaceholder")}
             value={name}
             onChange={(e) => setName(e.target.value)}
             autoComplete="name"
@@ -79,12 +89,12 @@ const RegisterForm = () => {
             htmlFor="reg-email"
             className="text-xs font-semibold text-slate-600 dark:text-slate-300"
           >
-            Email address
+            {t("emailLabel")}
           </label>
           <input
             id="reg-email"
             type="email"
-            placeholder="you@example.com"
+            placeholder={t("emailPlaceholder")}
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             autoComplete="email"
@@ -98,13 +108,13 @@ const RegisterForm = () => {
             htmlFor="reg-password"
             className="text-xs font-semibold text-slate-600 dark:text-slate-300"
           >
-            Password
+            {t("passwordLabel")}
           </label>
           <div className="relative">
             <input
               id="reg-password"
               type={showPassword ? "text" : "password"}
-              placeholder="Min. 6 characters"
+              placeholder={t("passwordPlaceholder")}
               value={password}
               onChange={handlePassChange}
               onBlur={() => setPassTouched(true)}
@@ -136,7 +146,7 @@ const RegisterForm = () => {
                   className="flex items-center gap-1.5 text-xs text-red-500 dark:text-red-400"
                 >
                   <span className="inline-block w-1 h-1 rounded-full bg-red-500 dark:bg-red-400 shrink-0" />
-                  {err}
+                  {getPasswordRuleTranslation(err)}
                 </li>
               ))}
             </ul>
@@ -149,13 +159,13 @@ const RegisterForm = () => {
             htmlFor="reg-confirm"
             className="text-xs font-semibold text-slate-600 dark:text-slate-300"
           >
-            Confirm password
+            {t("confirmPasswordLabel")}
           </label>
           <div className="relative">
             <input
               id="reg-confirm"
               type={showConfirm ? "text" : "password"}
-              placeholder="Re-enter your password"
+              placeholder={t("confirmPasswordPlaceholder")}
               value={confirmPassword}
               onChange={handleConfirmChange}
               onBlur={() => setConfirmTouched(true)}
@@ -190,7 +200,7 @@ const RegisterForm = () => {
           {confirmTouched && !passwordsMatch && confirmPassword.length > 0 && (
             <p className="flex items-center gap-1.5 text-xs text-red-500 dark:text-red-400 mt-0.5">
               <span className="inline-block w-1 h-1 rounded-full bg-red-500 dark:bg-red-400 shrink-0" />
-              Passwords do not match
+              {t("passwordMismatch")}
             </p>
           )}
         </div>
@@ -205,7 +215,7 @@ const RegisterForm = () => {
               <Loader className="animate-spin" size={16} />
             ) : (
               <>
-                Create account
+                {t("createAccount")}
                 <ArrowRight size={16} className="shrink-0" />
               </>
             )}
@@ -216,7 +226,7 @@ const RegisterForm = () => {
             disabled={true}
             className="w-full h-10 flex items-center justify-center gap-2 rounded-lg opacity-30 bg-gray-500 text-white text-sm font-semibold shadow-sm shadow-emerald-500/20 transition-all cursor-not-allowed mt-1"
           >
-            Create account
+            {t("createAccount")}
             <ArrowRight size={16} className="shrink-0" />
           </button>
         )}
