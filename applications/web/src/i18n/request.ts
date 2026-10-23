@@ -20,6 +20,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
     footprintMessages,
     priceHistoryMessages,
     profileMessages,
+    authMessages,
   ] = await Promise.all([
     import(`../../messages/${locale}/Navbar.json`),
     import(`../../messages/${locale}/dashboard.json`),
@@ -32,6 +33,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
     import(`../../messages/${locale}/footprint.json`),
     import(`../../messages/${locale}/priceHistory.json`),
     import(`../../messages/${locale}/profile.json`),
+    import(`../../messages/${locale}/auth.json`),
   ]);
 
   return {
@@ -48,6 +50,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
       ...footprintMessages.default,
       ...priceHistoryMessages.default,
       ...profileMessages.default,
+      ...authMessages.default,
     },
   };
 });
