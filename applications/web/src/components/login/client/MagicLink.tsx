@@ -3,8 +3,10 @@
 import { Mail, X, CheckCircle2, Loader } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
+import { useTranslations } from "next-intl";
 
 const MagicLink = () => {
+  const t = useTranslations("Auth.magicLink");
   const [email, setEmail] = useState("");
   const [open, setOpen] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -12,7 +14,7 @@ const MagicLink = () => {
 
   const handleMagicLink = async () => {
     if (!email.trim()) {
-      toast.error("Please enter your email");
+      toast.error(t("enterEmailToast"));
       return;
     }
 
@@ -34,7 +36,7 @@ const MagicLink = () => {
         return;
       }
 
-      toast.success("Magic link sent successfully");
+      toast.success(t("sentToast"));
       setLinkSent(true);
     } catch (error: any) {
       toast.error(error?.code || "SOMETHING_WRONG");
@@ -63,7 +65,7 @@ const MagicLink = () => {
             size={16}
             className="text-slate-400 dark:text-slate-500 shrink-0"
           />
-          Continue with Magic Link
+          {t("button")}
         </button>
       </div>
 
@@ -91,12 +93,11 @@ const MagicLink = () => {
               <>
                 <div className="mb-6">
                   <h2 className="text-xl font-bold tracking-tight text-slate-900 dark:text-white">
-                    Magic Link Login
+                    {t("title")}
                   </h2>
 
                   <p className="mt-2 text-sm text-slate-500 dark:text-slate-400">
-                    Enter your email address and we'll send you a secure sign-in
-                    link.
+                    {t("description")}
                   </p>
                 </div>
 
@@ -105,7 +106,7 @@ const MagicLink = () => {
                     htmlFor="magic-email"
                     className="text-sm font-medium text-slate-700 dark:text-slate-300"
                   >
-                    Email Address
+                    {t("emailLabel")}
                   </label>
 
                   <input
@@ -113,7 +114,7 @@ const MagicLink = () => {
                     type="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    placeholder="you@example.com"
+                    placeholder={t("emailPlaceholder")}
                     autoComplete="email"
                     className="w-full h-11 px-4 rounded-xl border border-slate-200 dark:border-[#2a2a2a] bg-white dark:bg-[#1a1a1a] text-slate-900 dark:text-white placeholder:text-slate-400 outline-none focus:border-emerald-500 transition-all"
                   />
@@ -130,7 +131,7 @@ const MagicLink = () => {
                       <Loader size={16} className="animate-spin" />
                     </>
                   ) : (
-                    "Send Magic Link"
+                    t("sendButton")
                   )}
                 </button>
               </>
@@ -142,11 +143,11 @@ const MagicLink = () => {
                 />
 
                 <h2 className="text-xl font-bold text-slate-900 dark:text-white">
-                  Link Sent Successfully
+                  {t("sentTitle")}
                 </h2>
 
                 <p className="mt-3 text-sm text-slate-500 dark:text-slate-400">
-                  We've sent a secure sign-in link to:
+                  {t("sentDesc")}
                 </p>
 
                 <p className="mt-2 font-medium text-emerald-600 dark:text-emerald-400 break-all">
@@ -161,7 +162,7 @@ const MagicLink = () => {
                     }
                     className="w-full h-11 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white font-medium transition-all"
                   >
-                    Open Gmail
+                    {t("openGmail")}
                   </button>
 
                   <button
@@ -169,7 +170,7 @@ const MagicLink = () => {
                     onClick={handleClose}
                     className="w-full h-11 rounded-xl border border-slate-200 dark:border-[#2a2a2a] bg-white dark:bg-[#1a1a1a] text-slate-700 dark:text-slate-200 font-medium transition-all"
                   >
-                    Done
+                    {t("done")}
                   </button>
                 </div>
               </div>
